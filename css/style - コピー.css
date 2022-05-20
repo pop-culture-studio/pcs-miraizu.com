@@ -1,0 +1,902 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+font-size:62.5%;/*pxだと10px;*/
+ 
+}
+body {
+font-family:"MS Pゴシック",sans-serif;
+  background: url("../image/back03.webp");
+  animation: bgiLoop 5s linear infinite;
+}
+
+a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+p {
+  font-size: 1vw;  /*16px*/
+}   
+ 
+div {
+  font-size: 3rem;  /*32px*/
+}   
+	div p {
+	font-size: 1rem;  /*8px*/
+     }
+div h2 {
+	font-size: 2.5rem;  /*8px*/
+     } 
+/* 通常時はホバー時の文字を非表示にする */
+a .hover{
+display: none;
+}
+
+/* ホバー時は通常時の文字を非表示にする */
+a:hover .nomal{
+display: none;
+}
+
+/* ホバー時に、ホバー時の文字を表示する */
+a:hover .hover{
+display: inline;
+}
+li.example br{
+  line-height: initial;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 0 10px;
+}
+	
+.slide {
+  position: relative;
+  width: 100%;
+  padding-top: 62.5%;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+@keyframes bgiLoop {
+    0% { background-position: 0 0;}
+  100% { background-position: -100px 200px;}
+}
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+	10% {
+    opacity: 1;
+  }
+	28% {
+    opacity: 1
+  }
+	38% {
+    opacity: 0;
+  }
+	 100% {
+    opacity: 0;
+  }
+}
+.slide img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: slideshow 24s linear infinite;
+}
+.slide img:nth-child(2) {
+  animation-delay: 8s;
+}
+.slide img:last-child {
+  animation-delay: 16s;
+}
+@keyframes ani {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 40%;
+  }
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+::before , ::after {
+	box-sizing: inherit;
+}
+button {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: inherit;
+	vertical-align: middle;
+	text-align: inherit;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
+}
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+	/* ボタンの配置位置  */
+	position: fixed;
+	top: 32px;
+	right: 16px;
+	/* 最前面に */
+	z-index: 10;
+	/* ボタンの大きさ  */
+	width: 48px;
+	height: 48px;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+	display: block;
+	/* バーガー線の位置基準として設定 */
+	position: relative;
+	/* 線の長さと高さ */
+	width: 100%;
+	height: 4px;
+	/* バーガー線の色 */
+	background-color: #000000;
+	transition: .2s;
+}
+/***** 上下のバーガー線 *****/
+.btn-line::before , .btn-line::after {
+	content: "";
+	/* 基準線と同じ大きさと色 */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	transition: .5s;
+}
+.btn-line::before {
+	/* 上の線の位置 */
+	transform: translateY(-16px);
+}
+.btn-line::after {
+	/* 下の線の位置 */
+	transform: translateY(16px);
+}
+/***** メニューオープン時 *****/
+.btn-line.open {
+	/* 真ん中の線を透明に */
+	background-color: transparent;
+}
+.btn-line.open::before , .btn-line.open::after {
+	content: "";
+	background-color: #efefef;
+	transition: .2s;
+}
+.btn-line.open::before {
+	/* 上の線を傾ける */
+	transform: rotate(45deg);
+}
+.btn-line.open::after {
+	/* 上の線を傾ける */
+	transform: rotate(-45deg);
+}
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+/**************** 以下、メニューのスタイリング ****************/
+
+.menu-list {
+	/* メニューテキスト位置をリスト内中心に */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.menu-list:hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: .3s;
+}
+/***** メニューオープン時位置0にして画面内に *****/
+.menu.open {
+	position: fixed;
+	top:0;
+	right: 0;
+	left: 50;
+}
+
+@media screen and (max-width: 960px) {
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+	/* メニューを縦に */
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: -100vw;
+	/* メニューの位置マイナス指定で画面外に */
+	right: -70%;
+	width: 70%;
+	height: 100vw;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #efefef;
+	transition: .3s;
+	z-index: 1;
+}
+/**************** ここまで ****************/
+	#vertical_1{
+	position: relative;
+	left: 90%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px; 
+	font-size: 3vw;
+}
+	#vertical_2{
+	position: relative;
+	left: 75%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px;
+	font-size: 3vw;
+}
+		#vertical_3{
+	position: relative;
+	left: 60%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px;
+	font-size: 3vw;
+}
+		#vertical_4{
+	position: relative;
+	left: 40%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px; 
+	font-size: 3vw;
+}
+		#vertical_5{
+	position: relative;
+	left: 20%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px; 
+	font-size: 3vw;
+}
+		#vertical_6{
+	position: relative;
+	left: 0%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px; 
+	font-size: 3vw;
+}
+		#vertical_7{
+	position: relative;
+	left: 0%;
+	display: inline-block;
+	text-align: right;
+	-ms-writing-mode: tb-rl;
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+		border-left: solid #000000 1px; 
+	font-size: 3vw;
+}
+	.num {
+	-ms-text-combine-horizontal: all;
+	-webkit-text-combine: horizontal;
+	text-combine-upright: all;
+	line-height: 1;
+	vertical-align: baseline;
+}
+		.bold {
+	-ms-text-combine-horizontal: all;
+	-webkit-text-combine: horizontal;
+	text-combine-upright: all;
+	line-height: 1;
+	vertical-align: baseline;
+	font-weight: bold;
+	color: #FF0004;
+}
+		h1 img{
+	/* ロゴの配置位置  */
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	/* 最前面に */
+	z-index: 10;
+	/* ボタンの大きさ  */
+	width: 30%;
+	height: auto;
+}
+#box2{
+	width: 80%;
+	height: 600px;
+	margin: 20% 10% 0 10% ;
+	padding: 10,10,10,10;
+	background:rgba(0,0,0,0.0);
+
+}
+	#box2 h2{
+		text-align: center;
+		padding: 0 0 20px 0 ;
+		margin: 0;
+	}
+	#box2 p{
+		padding: 20px 0 0 0;
+		font-size: 3vw;
+	}
+.border { 
+	position: absolute;
+	width: 80%; height: auto;
+	}
+#box3{
+	width: 80%;
+	height: auto;
+	margin: 0% 10% 0 10% ;
+	background:rgba(0,0,0,0.0);
+
+}
+	#box3 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+#box4{
+			width: 80%;
+			height: auto;
+	        paddin: 0vw;
+	        margin: 0 10% 0 10%;
+	        line-height: 200%;
+	background:rgba(0,0,0,0.0);
+}	
+	#box4 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+.box5{
+	width: 80%;
+	height: auto;
+	margin: 0% 10% 0 10% ;
+	z-index: -1000;
+	background:rgba(0,0,0,0.0);
+
+
+}
+	.box5 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+	.box5 img{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+			#box6{
+	width: 80%;
+	height: auto;
+	margin: auto 10% 0 10% ;
+	background:rgba(0,0,0,0.0);
+
+
+}
+	#box6 img{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#box6 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+		#box7{
+	width: 100%;
+	height:1000px;
+	margin: 0 0 0 0;
+	background-color:rgba(0,0,0,0.50);
+
+}
+	#box7 h2{
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 50px;
+		font-size: 4vw;
+	}
+	#box7 p{
+		color: #ffffff;
+		font-size: 3vw;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#price_access{
+	width: 80%;
+	height: auto;
+	border: #FFFFFF;
+    border-style:solid;
+	margin: 0% 10% 40px 10% ;
+	padding: 0 0 3% 0;
+	background-color:rgba(0,0,0,0.7);
+
+}
+		#price_access h3{
+		color: #ffffff;
+		text-align: left;
+		padding: 5% 0 5% 10%;
+		font-size: 4vw;
+	}
+	#price_access p{
+		color: #ffffff;
+		text-align: left;
+		padding: 0 0 4% 15%;
+		margin: 0 0 0 0;
+		font-size: 2vw;
+	}
+	.br01{
+		font-size: 2vw;
+	}
+
+	#price_access img{
+		width: 100%;
+		height: auto;
+		margin: 30px 0 0 0
+	}
+	.price{
+		width :calc(80% / 1);
+		height: auto;
+	}
+	.box8{
+		width :calc(80% / 1);
+		height: auto;
+		
+	}
+		 footer{
+	color: #FFFFFF;
+	width: 100%;
+	padding: 0 0 10px 0;
+	margin: 0 0 0 0;
+	height: 600px;
+	background-color:#000000;
+
+}
+		footer h4{
+		position: relative;
+		top:20%;
+		left: 10%;
+		display: block;
+		width: 100%;
+		line-height: 200%;
+		font-size: 3vw;
+	}
+	
+footer h5{
+		position: relative;
+		top:20%;
+		left: 10%;
+		display: block;
+		width: 100%;
+		font-size: 3vw;
+	    padding: 0 0 5% 0;
+	}
+ footer ul{
+	 width: 100%;
+	 position: relative;
+	 left: 10%;
+     display: block;
+	 line-height: 150%;
+	
+}
+footer li {
+  font-size: 3vw;
+  width: 100%;
+}
+
+div h2 {
+	font-size: 1.5rem;  /*8px*/
+	padding: 10px;
+     }
+
+/* 親要素(コンテナ) */
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+/* 子要素(アイテム) */
+.flex-item {
+
+}
+	.img{width: 50%;
+	height: auto;}
+	.image{
+		width :calc(100% / 1);
+        height: auto;
+	}	
+	.price_menu{
+		width :calc(100% / 2);
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+.circle-oosoto{flex-direction:column;
+}
+/* 横幅は９０％、中の要素の場所を指定したいので、positionをrelativeで指定する。
+中央寄せ、パディングで下の丸円との距離を離してあがる。margin0 autoがあので、下との隙間を開けられない。*/
+.circle-waku{
+  width: 90%;position: relative; margin:0 auto;padding:1vw;
+
+}
+
+.title{
+  position: absolute;
+  font-size: 2.5vw;
+  color: #8F8787;
+  width: 100%;
+  text-align: center;
+  top:35%;
+  margin: -20vw 0;
+　line-height: 0.5;
+text-shadow: 2px 2px 10px #FFFFFF ,
+-2px 2px 5px #00FFFF,
+2px -2px 5px #87CEEB ,
+-2px -2px 5px #7FFFD4;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(22em * (1.41421356237 - 1) / 2 );
+  height: 22em;
+  border-radius: 50%;
+  }
+	.title p{
+	}
+}
+
+/* 960px以上はハンバーガーボタン表示、ヘッダー */
+@media screen and (min-width: 960px) {
+/**************** 以下、メニューのスタイリング ****************/
+	.menu {
+	/* メニューを縦に */
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+		top: auto;
+		bottom: -50%;
+	/* メニューの位置マイナス指定で画面外に */
+	right: -50%;
+	width: 20%;
+	height: 50%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #efefef;
+	transition: .3s;
+	z-index: 1;
+}
+/**************** ここまで ****************/
+	h1 img{
+		position: relative;
+		left: 37%;
+		width: 35%;
+		height: auto;
+	}
+#box2{
+	width: 60%;
+	height: auto;
+	margin: 0 20% 0 20% ;
+	background:rgba(0,0,0,0.0);
+}
+	#box2 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+	#box2 p{
+		padding: 20px 0 0 0;
+		font-size: 1vw;
+	}
+.border { width:60%; height:50px; border-bottom: solid #000000 1px; 
+	margin: 0 auto 0 auto;}
+	
+	
+		#box3{
+	width: 60%;
+	height: auto;
+	margin: 0% 20% 0 20% ;
+	background:rgba(0,0,0,0.0);
+
+}
+	#box3 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+
+		#box4{
+			width: 100%;
+			height: auto;
+			
+	background:rgba(0,0,0,0.0);
+
+}		#circle{
+	position: relative;
+	        top:80%;
+			left: 20%;
+	width: 80%;
+	height: 80%;
+	background:rgba(0,0,0,0.0);
+
+}
+	#box4 h2{
+		position: relative;
+		top:50%;
+		right: 14%;
+		text-align:center;
+		padding: 20px 0 20px 0 ;
+	}
+
+		.box5{
+	width: 60%;
+	height: auto;
+	margin: 0 auto 0 auto;
+	background:rgba(0,0,0,0.0);
+
+}
+	.box5 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+	.box5 img{
+		width: 100%;
+		height: 100%;
+		padding: 0 0 0 0;
+	}
+	.box5 p{
+		padding: 0 0 0 0;
+	}
+			#box6{
+	width: 60%;
+	height: auto;
+	margin: 0 20% 0 20%;
+	background:rgba(0,0,0,0.0);
+
+}
+	#box6 img{
+		width: 100%;
+		height: 100%;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	#box6 p{
+		padding: 0 0 0 0;
+	}
+	#box6 h2{
+		text-align: center;
+		padding: 20px 0 20px 0 ;
+	}
+	#box7{
+	width: 100%;
+	height: auto;
+	padding: 0 0 5% 0;
+	margin: 0 0 10 0 ;
+	background-color:rgba(0,0,0,0.5);
+
+}
+	#box7 h2{
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 100px;
+	}
+	#box7 p{
+		color: #ffffff;
+		font-size: 0.8rem;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+		
+	#price_access{
+	width: 60%;
+	height: auto;
+	border: #FFFFFF;	
+	border-style:solid;
+	margin: 0 20% 0 20% ;
+	background-color:rgba(0,0,0,0.7);
+
+
+}
+	#price_access h3{
+		color: #ffffff;
+		text-align: left;
+		padding: 10% 0 5% 5% ;
+	}
+	#price_access p{
+		color: #ffffff;
+		text-align: left;
+		padding: 0% 0 6% 10%;
+		font-size: 1vw;
+	}
+		.br02{
+		font-size: 1vw;
+	}
+	#price_access img{
+		color: #ffffff;
+		text-align: left;
+		padding: 3% 0 10% 0%;
+		font-size: 1vw;
+			line-height: 100%;
+	}
+	.box8{
+		width :calc(100% / 2);
+		height: auto;
+		
+	}
+		 footer{
+	color: #FFFFFF;
+	height: 300px;
+	margin: 0 0 0 0 ;
+	background-color:#000000;
+
+}
+		footer h4{
+		position: relative;
+		top:20%;
+		left: 40%;
+		display: block;
+		width: 100%;
+		line-height: 200%;
+		font-size: 1vw;
+	}
+	footer h5{
+		position: relative;
+		top:20%;
+		left: 40%;
+		display: block;
+		width: 100%;
+		line-height: 200%;
+		font-size: 1vw;
+	}
+
+ footer ul{
+	 width: 100%;
+	 position: relative;
+	 top:20%;
+	 right: 5%;
+     display: flex;
+	 line-height: 150%
+}
+footer li {
+  font-size: 1vw;
+  width: 100%;
+  text-align: left;
+}
+			div p {
+	font-size: 1rem;  /*8px*/
+	padding: 10px 10px 10px 20px;
+	margin: 0% auto 0% auto;
+     }
+div h2 {
+	font-size: 2rem;  /*8px*/
+	padding: 10px;
+     }
+
+	/* 親要素(コンテナ) */
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+/* 子要素(アイテム) */
+.flex-item {
+
+}
+ .img { width :calc(100% / 3);
+	height: auto;}
+.image{
+		width :calc(100% / 2);
+        height: auto;
+	}	
+	.price_menu{
+		width :calc(100% / 2);
+		height: auto;
+		padding: 0;
+		margin: 0;
+	}
+/*  */
+   /* PC用：各円がの四角枠を作りその枠の中に円を入れ込む。widthは全体の２４％とする */
+   .circle-waku{
+    position: relative;
+    width: 24%;
+    margin:0 1% 0 1%;
+  }
+  .title{
+      /*直接の親要素は、circle-festibalでpositionrelativeを指定してないが、今回は、その親のcircle-wakuとも同じ大きさなので、きっと親親のpositionを引き継いでている？*/
+      position: absolute;
+      /*画面サイズがスマホサイズで狭くなった上でのVWなので、大きく設定しないといけない。 */
+      color: #8F8787;
+      /*重要！親要素の枠いっぱいまにで、widthを設定してあげないと、左に寄ってしまう。理由は、文字数が横幅いっぱいにないから？*/
+      /*<p></>タグセットの中には文字が入っているので、インライン要素の中央揃えで横は真ん中に来る。*/
+      text-align: center;
+      /*高さが真ん中に来るにはこの指定が一番良いとのこと*/
+      top:20%;
+      /*<p>タグの前と後にはその高さの半分の余白ができてしまう。今回はトップから計っているので、トップの部分の余白（-7.5vw)を相殺する必要がある。*/
+      margin: -5vw 0 0 -1vw ;
+      /*高さを念の為フォント・サイズと同じにしておくこと（？本当に必要？*/
+      line-height: 1.2vw;
+      text-shadow: 2px 2px 10px #FFFFFF ,
+-2px 2px 5px #00FFFF,
+2px -2px 5px #87CEEB ,
+-2px -2px 5px #7FFFD4;
+	  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(22em * (1.41421356237 - 1) / 2 );
+  width: 22em;
+  height: 22em;
+  border-radius: 50%;
+  font-size: 1vw;
+    }	
+
+}
+/* PC・スマホ共通*/
+ /* 写真一つひとつ全部指定しなければいけない。内容物を入れるので、４つ書く */
+.circle-wordpress{
+  width: 100%;
+    /*横幅と同じ長さを上にもとって確保する。このことによりレスポシブルでも円の形が崩れない*/
+  padding-top: 100%;
+    /*borderを円にする*/
+  border-radius: 50%;
+    /*画像を入れる*/
+  background: linear-gradient(135deg,#FFFAFA, #A9A9A9) center;
+    /*画像を円の中にしっかり入るようにする。*/
+  background-size: cover;
+  box-shadow: 10px 10px 15px -10px;
+}
+.circle-HTML{
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#FFFAFA, #A9A9A9) no-repeat center ;
+  background-size: cover ;
+  box-shadow: 10px 10px 15px -10px;
+}
+.circle-CSS{
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#FFFAFA, #A9A9A9)center;
+  background-size: contain;
+   background-size: cover ;
+  box-shadow: 10px 10px 15px -10px;
+
+}
+.circle-php{
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background:url(https://web-shindanshi.jp/wp-content/uploads/2020/08/php2_294411656.jpg) center;
+  background-size: cover;
+
+}
