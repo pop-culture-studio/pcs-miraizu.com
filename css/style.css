@@ -999,6 +999,11 @@ text-align: center;
 		object-fit: contain;
 		object-position: top;
 	}
+
+	#box3 .object-cover{
+		object-fit: cover;
+	}
+
 	#box3 p{
 		width: 40%;
 		margin: 30px 0 0 10px ;
