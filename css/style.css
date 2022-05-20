@@ -1230,10 +1230,6 @@ header {
         object-position: top;
     }
 
-    #box3 .object-cover {
-        object-fit: cover;
-    }
-
     #box3 p {
         width: 60%;
         margin: 0 0 0 0;
