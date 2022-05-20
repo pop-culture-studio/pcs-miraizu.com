@@ -21,7 +21,7 @@ div {
   font-size: 3rem;  /*32px*/
 }   
 	div p {
-	font-size: 1rem;  /*8px*/
+	font-size: 2rem;  /*8px*/
      }
 div h2 {
 	font-size: 2.5rem;  /*8px*/
@@ -123,6 +123,7 @@ header{
  		.li_1 {
 }
 	 		.li_2 {
+				font-size: 2rem;
 }
 	 		.li_3 {
 }
