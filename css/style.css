@@ -303,7 +303,6 @@ header {
         position: absolute;
         top: 330px;
         left: 60%;
-
     }
 
     #nav01 li {
@@ -311,7 +310,8 @@ header {
         height: 70px;
         margin: 3px 0 0 0;
         text-align: center;
-        padding: 25px 0 0 0;
+        padding: 0 0 0 0;
+        line-height: 70px;
     }
 
     #nav01 li a {
@@ -334,7 +334,8 @@ header {
         height: 70px;
         margin: 3px 0 0 0;
         text-align: center;
-        padding: 25px 0 0 0;
+        padding: 0 0 0 0;
+        line-height: 70px;
     }
 
     #nav02 li a {
@@ -364,8 +365,9 @@ header {
         height: 100px;
         text-align: center;
         font-size: 1.5rem;
-        padding: 3rem 0 0 0;
+        padding: 0 0 0 0;
         font-weight: bold;
+        line-height: 100px;
     }
 
     #girl01 {
@@ -826,8 +828,9 @@ header {
     #nav09 li {
         text-align: center;
         height: 70px;
-        padding: 20px 0 0 0;
         margin: 0 0 2px 0;
+        padding: 0 0 0 0;
+        line-height: 70px;
     }
 
     #nav09 li a {
@@ -842,8 +845,9 @@ header {
     #nav10 li {
         text-align: center;
         height: 70px;
-        padding: 20px 0 0 0;
         margin: 0 0 2px 0;
+        padding: 0 0 0 0;
+        line-height: 70px;
     }
 
     #nav10 li a {
@@ -1054,8 +1058,9 @@ header {
         width: 20%;
         height: 100px;
         text-align: center;
-        padding: 30px 0 0 0;
         margin: 0 0 0 3px;
+        padding: 0 0 0 0;
+        line-height: 100px;
     }
 
     #nav01 li a {
@@ -1077,8 +1082,9 @@ header {
         width: 20%;
         height: 100px;
         text-align: center;
-        padding: 30px 0 0 0;
+        padding: 0 0 0 0;
         margin: 3px 0 0 3px;
+        line-height: 100px;
     }
 
     #nav02 li a {
@@ -1108,8 +1114,9 @@ header {
         height: 100px;
         text-align: center;
         font-size: 2rem;
-        padding: 3rem 0 0 0;
+        padding: 0 0 0 0;
         font-weight: bold;
+        line-height: 100px;
     }
 
     #girl01 {
@@ -1546,8 +1553,9 @@ header {
         width: 20%;
         height: 100px;
         text-align: center;
-        padding: 30px 0 0 0;
         margin: 0 0 0 3px;
+        padding: 0 0 0 0;
+        line-height: 100px;
     }
 
     #nav09 li a {
@@ -1569,8 +1577,9 @@ header {
         width: 20%;
         height: 100px;
         text-align: center;
-        padding: 30px 0 0 0;
         margin: 3px 0 0 3px;
+        padding: 0 0 0 0;
+        line-height: 100px;
     }
 
     #nav10 li a {
