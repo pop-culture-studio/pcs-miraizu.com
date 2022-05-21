@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
-/*html {*/
-/*    font-size: 62.5%; !*pxだと10px;*!*/
-/*}*/
+html {
+    font-size: 62.5%; /*pxだと10px;*/
+}
 
 /*body {*/
 /*    font-family: "MS Pゴシック", sans-serif;*/
