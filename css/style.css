@@ -2,6 +2,7 @@
 /* CSS Document */
 html {
     font-size: 62.5%; /*pxだと10px;*/
+    scroll-behavior: smooth;
 }
 
 /*body {*/
