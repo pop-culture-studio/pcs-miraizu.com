@@ -16,54 +16,8 @@ ol, ul {
     list-style: none;
 }
 
-/*p {*/
-/*    font-size: 1vw; !*16px*!*/
-/*}*/
-
-/*div {*/
-/*    font-size: 3rem; !*32px*!*/
-/*}*/
-
-/*div p {*/
-/*    font-size: 2rem; !*8px*!*/
-/*}*/
-
 div h2 {
     font-size: 2.5rem; /*8px*/
-}
-
-/* 通常時はホバー時の文字を非表示にする */
-a .hover {
-    display: none;
-}
-
-/* ホバー時は通常時の文字を非表示にする */
-a:hover .nomal {
-    display: none;
-}
-
-/* ホバー時に、ホバー時の文字を表示する */
-a:hover .hover {
-    display: inline;
-}
-
-li.example br {
-    line-height: initial;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 0 0 10px;
-}
-
-.slide {
-    position: relative;
-    width: 100%;
-    padding-top: 62.5%;
-    overflow: hidden;
-    background-color: #FFFFFF;
 }
 
 * {
