@@ -8,23 +8,23 @@ html {
 /*    font-family: "MS Pゴシック", sans-serif;*/
 /*}*/
 
-/*a {*/
-/*    text-decoration: none;*/
-/*}*/
+a {
+    text-decoration: none;
+}
 
-/*ol, ul {*/
-/*    list-style: none;*/
-/*}*/
+ol, ul {
+    list-style: none;
+}
 
-h2 {
+div h2 {
     font-size: 2.5rem; /*8px*/
 }
 
-/** {*/
-/*    box-sizing: border-box;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /**************** 以下、ハンバーガーボタンのスタイリング ****************/
 ::before, ::after {
