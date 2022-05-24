@@ -155,10 +155,6 @@ header {
     color: #231815;
 }
 
-#box1 a {
-    color: #fff;
-}
-
 @media screen and (max-width: 960px) {
     #header {
         width: 100%;
@@ -318,7 +314,6 @@ header {
         height: 70px;
         padding: 10px 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     #box0 {
@@ -506,7 +501,7 @@ header {
     #box4 {
         width: 80%;
         height: auto;
-        paddin: 0vw;
+        padding: 0;
         margin: 0 10% 0 10%;
         line-height: 200%;
         background: rgba(0, 0, 0, 0.0);
@@ -828,7 +823,6 @@ header {
 
     #nav10 li a {
         font-weight: bold;
-        color: #fff;
     }
 
     div h2 {
@@ -1045,7 +1039,6 @@ header {
         height: 100px;
         padding: 10px 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     #nav02 {
@@ -1542,7 +1535,6 @@ header {
         height: 100px;
         padding: 10px 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     #nav10 {
@@ -1567,7 +1559,6 @@ header {
         height: 100px;
         padding: 0 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     /* 親要素(コンテナ) */
