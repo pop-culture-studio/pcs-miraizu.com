@@ -166,18 +166,15 @@ header {
     }
 
     .p {
-        font-size: 10px;
         font-size: 3.125vw;
         font-weight: bold;
     }
 
     .vw {
-        font-size: 10px;
         font-size: 3.125vw;
     }
 
     .li {
-        font-size: 10px;
         font-size: 3.125vw;
     }
 
@@ -193,13 +190,11 @@ header {
     }
 
     .h2 {
-        font-size: 14px;
         font-size: 4.375vw;
         font-weight: bold;
     }
 
     .h3 {
-        font-size: 9px;
         font-size: 2.8125vw;
         font-weight: bold;
     }
@@ -289,7 +284,6 @@ header {
         height: 70px;
         padding: 10px 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     #nav02 {
@@ -321,7 +315,6 @@ header {
         height: 500px;
         background: url("../image/header_back.png") repeat-y;
         background-size: cover;
-
     }
 
     #box1 {
@@ -344,14 +337,12 @@ header {
     #girl01 {
         position: absolute;
         top: 20%;
-        left: 0%;
-
+        left: 0;
     }
 
     #girl01 img {
         width: 55%;
         height: auto;
-
     }
 
     #girl02_img {
@@ -363,8 +354,7 @@ header {
         width: 80%;
         height: auto;
         margin: 700px 10% 0 10%;
-        padding: 10, 10, 10, 10;
-
+        padding: 10px 10px 10px 10px;
     }
 
     #box2 h2 {
@@ -435,7 +425,7 @@ header {
 
     .br_01 {
         position: relative;
-        top: 0px;
+        top: 0;
         left: 15%;
         background: linear-gradient(135deg, #fff68e, #FFFFFF) center;
         border-radius: 30vw / 15vw;
@@ -462,7 +452,7 @@ header {
     #box3 {
         width: 80%;
         height: auto;
-        margin: 0% 10% 0 10%;
+        margin: 0 10% 0 10%;
         background: rgba(0, 0, 0, 0.0);
 
     }
@@ -493,7 +483,7 @@ header {
 
     .boder03 {
         width: 100%;
-        margin: 0 0% 0 0%;
+        margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
@@ -530,7 +520,6 @@ header {
         width: calc(100% / 1);
         min-width: 15%;
         max-height: auto;
-
     }
 
     figure {
@@ -541,7 +530,6 @@ header {
     }
 
     #box4 img {
-
         max-width: 100%;
         max-height: auto;
     }
@@ -554,16 +542,14 @@ header {
 
     .boder04 {
         width: 100%;
-        margin: 0 0% 0 0%;
+        margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
 
     .box5 {
     calc(100 % / 2) height: auto;
-        margin: 0% 0% 0 10%;
-
-
+        margin: 0 0 0 10%;
     }
 
     .box5 h2 {
@@ -615,7 +601,7 @@ header {
 
     .boder04 {
         width: 100%;
-        margin: 0 0% 0 0%;
+        margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
@@ -625,8 +611,6 @@ header {
         height: auto;
         margin: auto 10% 0 10%;
         background: rgba(0, 0, 0, 0.0);
-
-
     }
 
     #box6 img {
@@ -652,17 +636,17 @@ header {
     }
 
     #box7 {
-        width: 60%;
+        width: 80%;
         height: auto;
         padding: 0 0 5% 0;
-        margin: 0 20% 10 20%;
+        margin: 0 20% 10px 20%;
 
     }
 
     #box7 h2 {
-        text-align: left;
+        text-align: center;
         padding: 20px 0 20px 0;
-        margin: 0 0 0 35%;
+        margin: 0 0 0 15%;
     }
 
     #box07_tishou {
@@ -688,10 +672,7 @@ header {
         margin: 20px 0 0 50%;
         font-weight: bold;
         border: 4px #FF0000 solid;
-        border-top-left-radius: 50px 50px;
-        border-top-right-radius: 50px 50px;
-        border-bottom-left-radius: 50px 50px;
-        border-bottom-right-radius: 50px 50px;
+        border-radius: 50px 50px;
     }
 
     .box07_img {
@@ -703,7 +684,7 @@ header {
     .box7_01 {
         font-weight: bold;
         position: relative;
-        top: 0px;
+        top: 0;
         left: 60%;
     }
 
@@ -725,7 +706,7 @@ header {
         text-align: center;
         font-size: 5vw;
         padding: 10px 0 10px 0;
-        margin: 0 0 0 0%;
+        margin: 0 0 0 0;
         font-weight: bold;
 
     }
@@ -767,16 +748,12 @@ header {
     }
 
     footer {
-
         height: 600px;
-
     }
 
     #box09_1 {
-
         background: url("../image/header_back.png") repeat-y;
         background-size: cover;
-
     }
 
     footer h1 {
@@ -834,7 +811,6 @@ header {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
-
     }
 
     /* 子要素(アイテム) */
@@ -891,7 +867,7 @@ header {
         text-align: center;
         top: 35%;
         margin: -20vw 0;
-        　line-height: 0.5;
+        line-height: 0.5;
         text-shadow: 2px 2px 10px #FFFFFF,
         -2px 2px 5px #00FFFF,
         2px -2px 5px #87CEEB,
@@ -911,62 +887,36 @@ header {
 
 /* 960px以上はハンバーガーボタン表示、ヘッダー */
 @media screen and (min-width: 960px) {
-    /**************** 以下、メニューのスタイリング ****************/
-    .menu {
-        /* メニューを縦に */
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: auto;
-        bottom: -50%;
-        /* メニューの位置マイナス指定で画面外に */
-        right: -50%;
-        width: 20%;
-        height: 50%;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: #efefef;
-        transition: .3s;
-        z-index: 1;
-    }
-
-    /**************** ここまで ****************/
     .px {
         font-size: 16px;
     }
 
     .p {
-        font-size: 12px;
         font-size: 1.2000000000000002vw;
         font-weight: bold;
     }
 
     .vw {
-        font-size: 4px;
         font-size: 1.25vw;
     }
 
     .li {
-        font-size: 4px;
         font-size: 1.25vw;
     }
 
     .li_1 {
-        font-size: 4px;
         font-size: 1.25vw;
     }
 
     .li_2 {
-        font-size: 3px;
         font-size: 0.9375vw;
     }
 
     .h2 {
-        font-size: 7px;
         font-size: 2.1875vw;
     }
 
     .h3 {
-        font-size: 14px;
         font-size: 1.4000000000000001vw;
     }
 
@@ -1063,7 +1013,6 @@ header {
         height: 100px;
         padding: 0 0 0 0;
         font-weight: bold;
-        color: #fff;
     }
 
     #box0 {
@@ -1093,9 +1042,8 @@ header {
 
     #girl01 {
         position: absolute;
-        top: 0%;
+        top: 0;
         left: 5px;
-
     }
 
     #girl01 img {
@@ -1107,14 +1055,12 @@ header {
     #box2 {
         width: 80%;
         height: auto;
-        margin: 700px 0% 0 20%;
-
+        margin: 700px 0 0 20%;
     }
 
     #box2 h2 {
-        padding: 20px 0 20px 2%;
+        padding: 20px 0 20px 0;
         font-weight: bold;
-
     }
 
     #box2 h3 {
@@ -1201,11 +1147,9 @@ header {
         width: 60%;
         height: auto;
         margin: 5% 20% 0 20%;
-
     }
 
     #box3 h2 {
-        text-align: center;
         padding: 20px 0 20px 0;
         font-weight: bold
     }
@@ -1231,7 +1175,7 @@ header {
 
     .boder03 {
         width: 70%;
-        margin: 0 0% 0 0%;
+        margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
@@ -1239,21 +1183,21 @@ header {
     #box4 {
         width: 60%;
         height: auto;
-        margin: 5% 20% 0 20%;
+        margin: 5% 20% 5% 20%;
 
     }
 
     #box4 h2 {
         width: 60%;
         text-align: left;
-        margin: 0 0 0 5%;
+        margin: 0 0 0 0;
         padding: 20px 0 20px 0;
         font-weight: bold;
     }
 
     #box4 h3 {
         width: 100%;
-        margin: 0 0 0 5%;
+        /*margin: 10px;*/
         color: #595757;
     }
 
@@ -1286,7 +1230,7 @@ header {
 
     .boder04 {
         width: 100%;
-        margin: 0 0% 0 0%;
+        margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
@@ -1343,8 +1287,7 @@ header {
     #box6 {
         width: 60%;
         height: auto;
-        margin: 0 20% 0 20%;
-
+        margin: 0 20% 10px 20%;
     }
 
     #box6 p {
@@ -1375,14 +1318,13 @@ header {
         width: 60%;
         height: auto;
         padding: 0 0 5% 0;
-        margin: 0 20% 10 20%;
-
+        margin: 0 20% 10px 20%;
     }
 
     #box7 h2 {
         text-align: left;
         padding: 20px 0 20px 0;
-        margin: 0 0 0 35%;
+        margin: 0 0 0 0;
         font-weight: bold;
     }
 
@@ -1393,38 +1335,35 @@ header {
     #box7_img_tishou {
         width: 20%;
         height: auto;
-        margin: 5% 0 0 117%;
+        margin: 5% 0 0 17%;
     }
 
     #box7_tishou_p {
         width: 120%;
         height: auto;
         font-weight: bold;
-        margin: -16% 0 0 140%;
+        margin: -16% 0 0 40%;
     }
 
     .box07_p {
         width: 35%;
         text-align: center;
-        margin: 20px 0 0 65%;
+        margin: 20px 0 0 20%;
         font-weight: bold;
         border: 4px #FF0000 solid;
-        border-top-left-radius: 50px 50px;
-        border-top-right-radius: 50px 50px;
-        border-bottom-left-radius: 50px 50px;
-        border-bottom-right-radius: 50px 50px;
+        border-radius: 50px 50px;
     }
 
     .box07_img {
         width: 7%;
         text-align: center;
-        margin: 20px 0 0 80%;
+        margin: 20px 0 0 32%;
     }
 
     .box7_01 {
         font-weight: bold;
         position: relative;
-        top: 0px;
+        top: 0;
         left: 60%;
     }
 
@@ -1446,7 +1385,7 @@ header {
         text-align: center;
         font-size: 2.5vw;
         padding: 10px 0 10px 0;
-        margin: 0 0 0 0%;
+        margin: 0 0 0 0;
         font-weight: bold;
 
     }
