@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-html {
-    font-size: 62.5%; /*pxだと10px;*/
-}
-
-/*body {*/
-/*    font-family: "MS Pゴシック", sans-serif;*/
+/*html {*/
+/*    font-size: 62.5%; !*pxだと10px;*!*/
 /*}*/
+
+body {
+    font-size: 1rem;
+    background-color: #fff;
+}
 
 a {
     text-decoration: none;
@@ -34,8 +35,6 @@ h2 {
 header {
     height: 300px;
     margin-top: 5%;
-    background-color: #FFFFFF;
-
 }
 
 .scroll-smooth {
@@ -166,41 +165,41 @@ header {
     }
 
     .p {
-        font-size: 3.125vw;
+        font-size: 1rem;
         font-weight: bold;
     }
 
     .vw {
-        font-size: 3.125vw;
+        font-size: 1rem;
     }
 
     .li {
-        font-size: 3.125vw;
+        font-size: 1rem;
     }
 
     .li_1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .li_2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .li_3 {
     }
 
     .h2 {
-        font-size: 4.375vw;
+        font-size: 1.5rem;
         font-weight: bold;
     }
 
     .h3 {
-        font-size: 2.8125vw;
+        font-size: 1rem;
         font-weight: bold;
     }
 
 
-    #b_style {
+    .b_style {
         position: absolute;
         top: 5%;
         left: 5%;
@@ -234,7 +233,7 @@ header {
 
     }
 
-    #p_style {
+    .p_style {
         position: absolute;
         top: 20%;
         left: 5%;
@@ -328,7 +327,7 @@ header {
         width: 50%;
         height: 100px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 0 0 0 0;
         font-weight: bold;
         line-height: 100px;
@@ -365,12 +364,12 @@ header {
 
     #box2 h3 {
         color: #595757;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #box2 p {
         padding: 20px 0 0 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: bold;
         color: #595757;
     }
@@ -410,7 +409,7 @@ header {
         line-height: 50px;
         letter-spacing: 1px;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #box2 h4 {
@@ -447,7 +446,6 @@ header {
 
     .boder02 {
         width: 100%;
-
         border-bottom: solid 2px #595757;
     }
 
@@ -707,7 +705,7 @@ header {
 
     #box08 h1 {
         text-align: center;
-        font-size: 5vw;
+        font-size: 1.5rem;
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
@@ -727,7 +725,7 @@ header {
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #box08 .tel {
@@ -759,7 +757,7 @@ header {
         background-size: cover;
     }
 
-    footer h1 {
+    #footer_b {
         font-weight: bold;
         margin: 0 0 0 5%;
     }
@@ -895,43 +893,41 @@ header {
     }
 
     .p {
-        font-size: 1.2000000000000002vw;
+        font-size: 1rem;
         font-weight: bold;
     }
 
     .vw {
-        font-size: 1.25vw;
+        font-size: 1rem;
     }
 
     .li {
-        font-size: 1.25vw;
+        font-size: 1rem;
     }
 
     .li_1 {
-        font-size: 1.25vw;
+        font-size: 1rem;
     }
 
     .li_2 {
-        font-size: 0.9375vw;
+        font-size: 1rem;
     }
 
     .h2 {
-        font-size: 2.1875vw;
+        font-size: 1.5rem;
     }
 
     .h3 {
-        font-size: 1.4000000000000001vw;
+        font-size: 1rem;
     }
 
     #header {
         width: 100%;
         height: 300px;
-        background-color: #FFFFFF;
-
     }
 
-    #b_style {
-        font-size: 2rem;
+    .b_style {
+        font-size: 1.5rem;
         font-weight: bold;
         margin: 0 0 0 39%;
         color: #595757;
@@ -946,8 +942,8 @@ header {
         border-bottom-color: #595757;
     }
 
-    #p_style {
-        font-size: 2rem;
+    .p_style {
+        font-size: 1.5rem;
         margin: 0 0 0 39%;
         color: #595757;
         font-weight: bold;
@@ -1037,7 +1033,7 @@ header {
         width: 50%;
         height: 100px;
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0 0 0 0;
         font-weight: bold;
         line-height: 100px;
@@ -1383,7 +1379,7 @@ header {
 
     #box08 h1 {
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 1.5rem;
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
@@ -1403,7 +1399,7 @@ header {
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #box08 .tel {
@@ -1434,11 +1430,11 @@ header {
 
     }
 
-    footer h1 {
+    #footer_b {
         padding: 20px 0 0 0;
         margin: 0 0 0 5%;
         font-weight: bold;
-        font-size: 1.5vw
+        font-size: 1rem
     }
 
     footer h2 img {
