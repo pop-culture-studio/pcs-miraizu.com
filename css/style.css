@@ -521,7 +521,7 @@ header {
     #box4 figure {
         width: calc(100% / 1);
         min-width: 15%;
-        max-height: auto;
+        max-height: 100%;
     }
 
     figure {
@@ -533,7 +533,7 @@ header {
 
     #box4 img {
         max-width: 100%;
-        max-height: auto;
+        max-height: 100%;
     }
 
     figcaption {
@@ -1207,8 +1207,7 @@ header {
     #box4 figure {
         width: calc(100% / 3);
         min-width: 15%;
-        max-height: auto;
-
+        max-height: 100%;
     }
 
     figure {
@@ -1221,7 +1220,7 @@ header {
     #box4 img {
 
         max-width: 80%;
-        max-height: auto;
+        max-height: 100%;
     }
 
     figcaption {
