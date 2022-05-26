@@ -365,11 +365,12 @@ header {
 
     #box2 h3 {
         color: #595757;
+        font-size: 2rem;
     }
 
     #box2 p {
         padding: 20px 0 0 0;
-        font-size: 3vw;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #595757;
     }
@@ -406,9 +407,10 @@ header {
 
     #box2 li {
         width: 100%;
-        line-height: 70px;
+        line-height: 50px;
         letter-spacing: 1px;
         font-weight: bold;
+        font-size: 1.5rem;
     }
 
     #box2 h4 {
