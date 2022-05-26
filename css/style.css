@@ -612,8 +612,7 @@ header {
     #box6 {
         width: 80%;
         height: auto;
-        margin: auto 10% 0 10%;
-        background: rgba(0, 0, 0, 0.0);
+        margin: 5% 10% 5% 10%;
     }
 
     #box6 img {
@@ -1290,7 +1289,7 @@ header {
     #box6 {
         width: 60%;
         height: auto;
-        margin: 0 20% 10px 20%;
+        margin: 5% 20% 5% 20%;
     }
 
     #box6 p {
