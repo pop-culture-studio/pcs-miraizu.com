@@ -503,9 +503,9 @@ header {
     }
 
     #box4 h2 {
-        width: 60%;
-        text-align: left;
-        margin: 0 0 0 5%;
+        /*width: 80%;*/
+        text-align: center;
+        margin: 0 0 0 0;
         padding: 20px 0 20px 0;
         font-weight: bold;
     }
@@ -553,8 +553,9 @@ header {
     }
 
     .box5 h2 {
+        text-align: center;
         width: 100%;
-        padding: 0 0 0 0;
+        padding: 20px 0 20px 0;
     }
 
     .box5 ul {
@@ -639,14 +640,14 @@ header {
         width: 80%;
         height: auto;
         padding: 0 0 5% 0;
-        margin: 0 20% 10px 20%;
+        margin: 0 10% 10px 10%;
 
     }
 
     #box7 h2 {
         text-align: center;
         padding: 20px 0 20px 0;
-        margin: 0 0 0 15%;
+        margin: 0 0 0 0;
     }
 
     #box07_tishou {
@@ -656,20 +657,20 @@ header {
     #box7_img_tishou {
         width: 25%;
         height: auto;
-        margin: 10% 0 0 90%;
+        margin: 10% 0 0 20%;
     }
 
     #box7_tishou_p {
         width: 120%;
         height: auto;
         font-weight: bold;
-        margin: -25% 0 0 120%;
+        margin: -25% 0 0 50%;
     }
 
     .box07_p {
         width: 75%;
         text-align: center;
-        margin: 20px 0 0 50%;
+        margin: 20px 0 0 20%;
         font-weight: bold;
         border: 4px #FF0000 solid;
         border-radius: 50px 50px;
@@ -678,7 +679,7 @@ header {
     .box07_img {
         width: 10%;
         text-align: center;
-        margin: 20px 0 0 80%;
+        margin: 20px 0 0 50%;
     }
 
     .box7_01 {
@@ -689,16 +690,16 @@ header {
     }
 
     .boder07 {
-        width: 60%;
+        /*width: 80%;*/
         margin: 0 0 0 0;
         height: auto;
         border-bottom: solid 2px #231815;
     }
 
-    #box8 {
-        width: 60%;
+    #box08 {
+        width: 80%;
         height: auto;
-        margin: 0 20% 0 20%;
+        margin: 0 10% 0 10%;
 
     }
 
@@ -712,9 +713,9 @@ header {
     }
 
     #box08 h2 {
-        text-align: left;
-        padding: 10px 0 10px 0;
-        margin: 0 0 0 20%;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        margin: 0 0 0 0;
         font-weight: bold;
 
     }
