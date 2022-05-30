@@ -582,23 +582,23 @@
 
     }
 
-    .img {
-        width: 50%;
-        height: auto;
-    }
+    /*.img {*/
+    /*    width: 50%;*/
+    /*    height: auto;*/
+    /*}*/
 
-    .image {
-        width: calc(100% / 1);
-        height: auto;
-    }
+    /*.image {*/
+    /*    width: calc(100% / 1);*/
+    /*    height: auto;*/
+    /*}*/
 
-    .font {
-        width: calc(100% / 1);
-        height: auto;
-    }
+    /*.font {*/
+    /*    width: calc(100% / 1);*/
+    /*    height: auto;*/
+    /*}*/
 
-    .font02 {
-        width: calc(100% / 1);
-        height: 100%;
-    }
+    /*.font02 {*/
+    /*    width: calc(100% / 1);*/
+    /*    height: 100%;*/
+    /*}*/
 }
