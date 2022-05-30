@@ -120,13 +120,12 @@
         font-weight: bold;
     }
 
-    #box0 {
+    .box0 {
         width: 100%;
         background: url("../image/header_back.png") no-repeat center center;
         background-size: cover;
         height: 400px;
         margin-top: 5%;
-
     }
 
     #box1 {
