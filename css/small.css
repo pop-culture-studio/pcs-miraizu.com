@@ -171,13 +171,13 @@
         line-height: 100px;
     }
 
-    #girl01 {
+    .girl01 {
         position: absolute;
         top: 20%;
         left: 0;
     }
 
-    #girl01 img {
+    .girl01 img {
         width: 55%;
         height: auto;
     }
