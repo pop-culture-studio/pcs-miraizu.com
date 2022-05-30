@@ -47,9 +47,9 @@
         position: relative;
         left: 40%;
         width: 35%;
-        height: auto;
-        border-bottom: solid;
-        border-bottom-color: #595757;
+        /*height: auto;*/
+        /*border-bottom: solid;*/
+        /*border-bottom-color: #595757;*/
     }
 
     .p_style {
