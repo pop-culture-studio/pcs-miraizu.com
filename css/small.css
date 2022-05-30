@@ -65,10 +65,10 @@
         z-index: 10;
         /* ボタンの大きさ  */
         width: 50%;
-        height: auto;
-        margin: 0 0 0 0;
-        border-bottom: solid 1px;
-        border-bottom-color: #595757;
+        /*height: auto;*/
+        /*margin: 0 0 0 0;*/
+        /*border-bottom: solid 1px;*/
+        /*border-bottom-color: #595757;*/
 
     }
 
