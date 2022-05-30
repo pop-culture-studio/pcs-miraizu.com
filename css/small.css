@@ -187,25 +187,25 @@
         background-size: cover;
     }
 
-    #box2 {
+    .box2 {
         width: 80%;
         height: auto;
         margin: 700px 10% 0 10%;
         padding: 10px 10px 10px 10px;
     }
 
-    #box2 h2 {
+    .box2 h2 {
         text-align: center;
         padding: 0 0 20px 0;
         margin: 0;
     }
 
-    #box2 h3 {
+    .box2 h3 {
         color: #595757;
         font-size: 1.5rem;
     }
 
-    #box2 p {
+    .box2 p {
         padding: 20px 0 0 0;
         font-size: 1rem;
         font-weight: bold;
@@ -218,31 +218,31 @@
         height: auto;
     }
 
-    #box2_img01 {
+    .box2_img01 {
         width: 40%;
         height: auto;
         display: none;
     }
 
-    #box2_img02 {
+    .box2_img02 {
         width: 100%;
         height: auto;
 
     }
 
-    #box2_img03 {
+    .box2_img03 {
         width: 100%;
         height: auto;
     }
 
-    #box2 ul {
+    .box2 ul {
         width: 100%;
         padding: 20px 0 0 15%;
         list-style: disc;
         color: #595757;
     }
 
-    #box2 li {
+    .box2 li {
         width: 100%;
         line-height: 50px;
         letter-spacing: 1px;
@@ -250,7 +250,7 @@
         font-size: 1rem;
     }
 
-    #box2 h4 {
+    .box2 h4 {
         width: 100%;
         position: absolute;
         bottom: 20px;

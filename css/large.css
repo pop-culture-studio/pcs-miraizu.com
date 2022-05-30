@@ -156,60 +156,59 @@
 
     }
 
-    #box2 {
+    .box2 {
         width: 80%;
         height: auto;
         margin: 700px 0 0 20%;
     }
 
-    #box2 h2 {
+    .box2 h2 {
         padding: 20px 0 20px 0;
         font-weight: bold;
     }
 
-    #box2 h3 {
+    .box2 h3 {
         padding: 20px 0 20px 5%;
         font-weight: bold;
         color: #595757;
     }
 
-    #box2 p {
+    .box2 p {
         width: 100%;
         padding: 20px 0 0 5%;
         color: #595757;
         line-height: 50px
     }
 
-    #box2_img01 {
+    .box2_img01 {
         width: 40%;
         height: auto;
     }
 
-    #box2_img02 {
-        width: 50%;
-        height: auto;
-
-    }
-
-    #box2_img03 {
+    .box2_img02 {
         width: 50%;
         height: auto;
     }
 
-    #box2 ul {
+    .box2_img03 {
+        width: 50%;
+        height: auto;
+    }
+
+    .box2 ul {
         width: 100%;
         padding: 20px 0 0 15%;
         list-style: disc;
         color: #595757;
     }
 
-    #box2 li {
+    .box2 li {
         width: 100%;
         line-height: 70px;
         letter-spacing: 1px
     }
 
-    #box2 h4 {
+    .box2 h4 {
         position: absolute;
         bottom: 30%;
         left: 20%;
