@@ -1,9 +1,4 @@
 @media screen and (max-width: 960px) {
-    #header {
-        width: 100%;
-        height: 300px;
-    }
-
     .px {
         font-size: 16px;
     }

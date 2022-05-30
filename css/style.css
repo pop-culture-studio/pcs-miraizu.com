@@ -152,3 +152,8 @@ header {
 .color17 {
     color: #231815;
 }
+
+.header {
+    width: 100%;
+    height: 300px;
+}
