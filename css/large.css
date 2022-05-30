@@ -383,23 +383,27 @@
 
     }
 
-    #box6 {
+    .box6 {
         width: 60%;
         height: auto;
         margin: 5% 20% 5% 20%;
     }
 
-    #box6 p {
-        margin: 0 0 0 21%;
+    .box6 p {
+        margin: 0 0 0 15%;
+        /*font-size: 1rem;*/
     }
 
-    #box6 h2 {
+    .box6 .h2 {
         text-align: left;
         padding: 20px 0 20px 0;
     }
 
-    #box6 h3 {
-        margin: 0 0 0 20%;
+    .box6 h3 {
+        text-align: left;
+        margin: 30px 0 5px 15%;;
+        font-weight: bold;
+        font-size: 1.25rem;
     }
 
     #box7 h2 {
@@ -407,7 +411,7 @@
         padding: 20px 0 20px 35%;
     }
 
-    #box6 h3 {
+    #box7 h3 {
         text-align: left;
         margin: 30px 0 0 21%;;
         font-weight: bold;
