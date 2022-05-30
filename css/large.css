@@ -55,16 +55,16 @@
         font-weight: bold;
     }
 
-    #header_sns li {
+    .header_sns li {
         width: 100%;
         margin: 0 0 0 0;
     }
 
-    #header_sns li img {
+    .header_sns li img {
         width: 50%;
     }
 
-    #header_sns {
+    .header_sns {
         width: 18%;
         position: absolute;
         top: 5%;
