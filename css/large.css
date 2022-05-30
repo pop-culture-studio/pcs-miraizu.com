@@ -582,7 +582,7 @@
         font-weight: bold;
     }
 
-    #nav10 {
+    .nav10 {
         width: 60%;
         position: relative;
         top: -150px;
@@ -590,7 +590,7 @@
         display: flex;
     }
 
-    #nav10 li {
+    .nav10 li {
         width: 20%;
         height: 100px;
         text-align: center;
@@ -599,7 +599,7 @@
         line-height: 100px;
     }
 
-    #nav10 li a {
+    .nav10 li a {
         width: 20%;
         height: 100px;
         padding: 0 0 0 0;

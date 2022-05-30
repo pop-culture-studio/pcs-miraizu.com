@@ -621,11 +621,11 @@
         color: #fff;
     }
 
-    #nav10 {
+    .nav10 {
 
     }
 
-    #nav10 li {
+    .nav10 li {
         text-align: center;
         height: 70px;
         margin: 0 0 2px 0;
@@ -633,7 +633,7 @@
         line-height: 70px;
     }
 
-    #nav10 li a {
+    .nav10 li a {
         font-weight: bold;
     }
 
