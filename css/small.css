@@ -586,12 +586,12 @@
         height: 600px;
     }
 
-    #box09_1 {
+    .box9 {
         background: url("../image/header_back.png") repeat-y;
         background-size: cover;
     }
 
-    #footer_b {
+    .footer_b {
         font-weight: bold;
         margin: 0 0 0 5%;
     }
