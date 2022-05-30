@@ -570,6 +570,7 @@
     .gmap iframe {
         width: 100%;
         height: auto;
+        margin: 5% 0 5% 0;
     }
 
     footer {
