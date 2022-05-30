@@ -194,7 +194,7 @@
         padding: 10px 10px 10px 10px;
     }
 
-    .box2 h2 {
+    .box2 .h2 {
         text-align: center;
         padding: 0 0 20px 0;
         margin: 0;
@@ -384,7 +384,7 @@
         margin: 0 0 0 10%;
     }
 
-    .box5 h2 {
+    .box5 .h2 {
         text-align: center;
         width: 100%;
         padding: 20px 0 20px 0;
@@ -476,7 +476,7 @@
 
     }
 
-    .box7 h2 {
+    .box7 .h2 {
         text-align: center;
         padding: 20px 0 20px 0;
         margin: 0 0 0 0;
@@ -546,7 +546,7 @@
 
     }
 
-    .box8 h2 {
+    .box8 .h2 {
         text-align: center;
         padding: 20px 0 20px 0;
         margin: 0 0 0 0;
@@ -637,10 +637,10 @@
         font-weight: bold;
     }
 
-    div h2 {
-        font-size: 1.5rem; /*8px*/
-        padding: 10px;
-    }
+    /*div h2 {*/
+    /*    font-size: 1.5rem; !*8px*!*/
+    /*    padding: 10px;*/
+    /*}*/
 
     /* 親要素(コンテナ) */
     .flex-container {

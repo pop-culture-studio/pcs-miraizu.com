@@ -1,4 +1,8 @@
 @media screen and (min-width: 960px) {
+    .md\:text-left {
+        text-align: left;
+    }
+
     .px {
         font-size: 16px;
     }
@@ -157,17 +161,17 @@
     }
 
     .box2 {
-        width: 80%;
+        width: 60%;
         height: auto;
         margin: 700px 0 0 20%;
     }
 
-    .box2 h2 {
+    .box2 .h2 {
         padding: 20px 0 20px 0;
         font-weight: bold;
     }
 
-    .box2 h3 {
+    .box2 .h3 {
         padding: 20px 0 20px 5%;
         font-weight: bold;
         color: #595757;
