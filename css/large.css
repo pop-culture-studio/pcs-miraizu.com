@@ -160,10 +160,14 @@
 
     }
 
-    .box2 {
+    .box {
         width: 60%;
         height: auto;
-        margin: 700px 0 0 20%;
+        margin: 5% 20% 0 20%;
+    }
+
+    .box2 {
+        margin-top: 700px;
     }
 
     .box2 .h2 {
@@ -252,9 +256,7 @@
     }
 
     .box3 {
-        width: 60%;
-        height: auto;
-        margin: 5% 20% 0 20%;
+
     }
 
     .box3 .h2 {
@@ -289,9 +291,6 @@
     }
 
     .box4 {
-        width: 60%;
-        height: auto;
-        margin: 5% 20% 5% 20%;
 
     }
 
@@ -341,9 +340,7 @@
     }
 
     .box5 {
-        width: 60%;
-        height: auto;
-        margin: 0 auto 0 auto;
+
     }
 
     .box5 ul {
@@ -388,9 +385,7 @@
     }
 
     .box6 {
-        width: 60%;
-        height: auto;
-        margin: 5% 20% 5% 20%;
+
     }
 
     .box6 p {
@@ -410,12 +405,8 @@
         font-size: 1.25rem;
     }
 
-
     .box7 {
-        width: 60%;
-        height: auto;
-        padding: 0 0 5% 0;
-        margin: 0 20% 10px 20%;
+
     }
 
     .box7 h3 {
@@ -428,7 +419,6 @@
     /*    text-align: left;*/
     /*    padding: 20px 0 20px 35%;*/
     /*}*/
-
     .box7 h2 {
         text-align: left;
         padding: 20px 0 20px 0;
@@ -485,9 +475,6 @@
     }
 
     .box8 {
-        width: 60%;
-        height: auto;
-        margin: 0 20% 0 20%;
 
     }
 
@@ -505,7 +492,6 @@
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
-
     }
 
     .box8 p {
