@@ -838,52 +838,6 @@ header {
         width: calc(100% / 1);
         height: 100%;
     }
-
-    .price_menu {
-        width: calc(100% / 2);
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
-
-    .circle-oosoto {
-        flex-direction: column;
-    }
-
-    /* 横幅は９０％、中の要素の場所を指定したいので、positionをrelativeで指定する。
-    中央寄せ、パディングで下の丸円との距離を離してあがる。margin0 autoがあので、下との隙間を開けられない。*/
-    .circle-waku {
-        width: 90%;
-        position: relative;
-        margin: 0 auto;
-        padding: 1vw;
-
-    }
-
-    .title {
-        position: absolute;
-        font-size: 2.5vw;
-        color: #8F8787;
-        width: 100%;
-        text-align: center;
-        top: 35%;
-        margin: -20vw 0;
-        line-height: 0.5;
-        text-shadow: 2px 2px 10px #FFFFFF,
-        -2px 2px 5px #00FFFF,
-        2px -2px 5px #87CEEB,
-        -2px -2px 5px #7FFFD4;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: calc(22em * (1.41421356237 - 1) / 2);
-        height: 22em;
-        border-radius: 50%;
-    }
-
-    .title p {
-    }
 }
 
 /* 960px以上はハンバーガーボタン表示、ヘッダー */
@@ -1526,12 +1480,5 @@ header {
     .font02 {
         width: calc(100% / 2);
         height: 100%;
-    }
-
-    .price_menu {
-        width: calc(100% / 2);
-        height: auto;
-        padding: 0;
-        margin: 0;
     }
 }
