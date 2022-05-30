@@ -605,10 +605,10 @@
         font-weight: bold;
     }
 
-    #nav09 {
+    .nav09 {
     }
 
-    #nav09 li {
+    .nav09 li {
         text-align: center;
         height: 70px;
         margin: 0 0 2px 0;
@@ -616,7 +616,7 @@
         line-height: 70px;
     }
 
-    #nav09 li a {
+    .nav09 li a {
         font-weight: bold;
         color: #fff;
     }

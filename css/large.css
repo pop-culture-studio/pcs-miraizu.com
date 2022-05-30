@@ -558,7 +558,7 @@
         font-size: 1vw
     }
 
-    #nav09 {
+    .nav09 {
         width: 60%;
         position: relative;
         top: -150px;
@@ -566,7 +566,7 @@
         display: flex;
     }
 
-    #nav09 li {
+    .nav09 li {
         width: 20%;
         height: 100px;
         text-align: center;
@@ -575,7 +575,7 @@
         line-height: 100px;
     }
 
-    #nav09 li a {
+    .nav09 li a {
         width: 20%;
         height: 100px;
         padding: 10px 0 0 0;
