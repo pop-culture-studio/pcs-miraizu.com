@@ -102,6 +102,10 @@ header {
     margin: 1rem; /* 8px */
 }
 
+.leading-10 {
+    line-height: 2.5rem; /* 40px */
+}
+
 .color01 {
     background-color: #FABD00;
 }

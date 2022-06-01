@@ -458,9 +458,9 @@
         margin: 10px 0 0 5%;
     }
 
-    footer h3 {
-        margin: 0 0 0 2%;
-        font-size: 1vw
+    footer .copyright {
+        margin: 0 0 0 5%;
+        font-size: 1rem
     }
 
     .nav09 {

@@ -476,9 +476,9 @@
         width: 40%;
     }
 
-    footer h3 {
+    footer .copyright {
+        display: block;
         text-align: center;
-        font-weight: bold;
     }
 
     .nav09 {
