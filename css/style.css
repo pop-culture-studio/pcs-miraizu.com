@@ -200,6 +200,10 @@ header {
     font-weight: bold;
 }
 
+.bg-rose {
+    background-color: #e7273e;
+}
+
 .text-rose {
     color: #e7273e;
 }
