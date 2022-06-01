@@ -450,17 +450,9 @@
 
     }
 
-    .box8 h1 {
+    .box8 .h3 {
         text-align: center;
-        font-size: 1.5rem;
-        padding: 10px 0 10px 0;
-        margin: 0 0 0 0;
-        font-weight: bold;
-
-    }
-
-    .box8 h2 {
-        text-align: left;
+        font-size: 2rem;
         padding: 10px 0 10px 0;
         margin: 0 0 0 0;
         font-weight: bold;
