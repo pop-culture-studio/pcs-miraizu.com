@@ -23,7 +23,6 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin: 0 0 0 40%;
-        color: #595757;
     }
 
     h1 img {
@@ -38,7 +37,6 @@
     .p_style {
         font-size: 1.5rem;
         margin: 0 0 0 40%;
-        color: #595757;
         font-weight: bold;
     }
 
@@ -156,13 +154,11 @@
     .box2 .h3 {
         padding: 20px 0 20px 5%;
         font-weight: bold;
-        color: #595757;
     }
 
     .box2 p {
         width: 100%;
         padding: 20px 0 0 5%;
-        color: #595757;
         line-height: 50px
     }
 
@@ -185,7 +181,6 @@
         width: 100%;
         padding: 20px 0 0 15%;
         list-style: disc;
-        color: #595757;
     }
 
     .box2 li {
@@ -236,40 +231,8 @@
         object-position: top;
     }
 
-    .box3 .p {
-        width: 60%;
-        margin: 0 0 0 0;
-        padding: 20px 10px 0 10px;
-        color: #595757;
-    }
-
-    .bold {
-        font-weight: bold;
-    }
-
-    .boder03 {
-        width: 70%;
-        margin: 0 0 0 0;
-        height: auto;
-        border-bottom: solid 2px #231815;
-    }
-
     .box4 {
 
-    }
-
-    .box4 .h2 {
-        width: 60%;
-        text-align: left;
-        margin: 0 0 0 0;
-        padding: 20px 0 20px 0;
-        font-weight: bold;
-    }
-
-    .box4 .h3 {
-        width: 100%;
-        margin: 10px;
-        color: #595757;
     }
 
     .box4 figure {
@@ -382,10 +345,11 @@
     .box07_p {
         width: 35%;
         text-align: center;
+        padding: 0.5rem;
         margin: 20px 0 0 20%;
         font-weight: bold;
         font-size: 1.5rem;
-        border: 4px #FF0000 solid;
+        border: 4px #e7273e solid;
         border-radius: 50px 50px;
     }
 

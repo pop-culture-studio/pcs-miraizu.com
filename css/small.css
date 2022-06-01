@@ -158,8 +158,7 @@
         margin-top: 700px;
     }
 
-    .box2 h3 {
-        color: #595757;
+    .box2 .h3 {
         font-size: 1.5rem;
     }
 
@@ -167,7 +166,7 @@
         padding: 20px 0 0 0;
         font-size: 1rem;
         font-weight: bold;
-        color: #595757;
+        line-height: 1.5rem
     }
 
     .border {
@@ -389,10 +388,11 @@
     .box07_p {
         width: 75%;
         text-align: center;
+        padding: 0.25rem;
         margin: 20px 0 0 20%;
         font-weight: bold;
         font-size: 1.25rem;
-        border: 4px #FF0000 solid;
+        border: 4px #e7273e solid;
         border-radius: 50px 50px;
     }
 
