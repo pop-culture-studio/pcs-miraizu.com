@@ -52,6 +52,11 @@ header {
     text-align: center;
 }
 
+.text-xl {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
 .text-5xl {
     font-size: 3rem; /* 48px */
     line-height: 1;
@@ -63,6 +68,11 @@ header {
 
 .m-2 {
     margin: 0.5rem; /* 8px */
+}
+
+.my-2 {
+    margin-top: 0.5rem; /* 8px */
+    margin-bottom: 0.5rem; /* 8px */
 }
 
 .color01 {
