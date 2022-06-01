@@ -44,8 +44,17 @@ header {
     color: #fff;
 }
 
+.text-black {
+    color: #000;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-5xl {
+    font-size: 3rem; /* 48px */
+    line-height: 1;
 }
 
 .p-2 {
