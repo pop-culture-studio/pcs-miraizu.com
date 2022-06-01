@@ -48,6 +48,10 @@ header {
     color: #000;
 }
 
+.font-bold {
+    font-weight: bold;
+}
+
 .text-center {
     text-align: center;
 }
@@ -55,6 +59,21 @@ header {
 .text-xl {
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
+}
+
+.text-2xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+.text-3xl {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+}
+
+.text-4xl {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
 }
 
 .text-5xl {
@@ -66,6 +85,10 @@ header {
     padding: 0.5rem; /* 8px */
 }
 
+.p-4 {
+    padding: 1rem; /* 8px */
+}
+
 .m-2 {
     margin: 0.5rem; /* 8px */
 }
@@ -73,6 +96,10 @@ header {
 .my-2 {
     margin-top: 0.5rem; /* 8px */
     margin-bottom: 0.5rem; /* 8px */
+}
+
+.m-4 {
+    margin: 1rem; /* 8px */
 }
 
 .color01 {
