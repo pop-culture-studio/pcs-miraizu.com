@@ -1,43 +1,4 @@
 @media screen and (max-width: 960px) {
-    .px {
-        font-size: 16px;
-    }
-
-    .p {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-    .vw {
-        font-size: 1rem;
-    }
-
-    .li {
-        font-size: 1rem;
-    }
-
-    .li_1 {
-        font-size: 1rem;
-    }
-
-    .li_2 {
-        font-size: 1rem;
-    }
-
-    .li_3 {
-    }
-
-    .h2 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .h3 {
-        font-size: 1rem;
-        font-weight: bold;
-    }
-
-
     .b_style {
         position: absolute;
         top: 5%;
