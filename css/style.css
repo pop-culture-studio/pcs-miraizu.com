@@ -244,10 +244,34 @@ header {
     width: 20%;
 }
 
+.w-2\/5{
+    width: 40%;
+}
+
 .w-3\/5{
     width: 60%;
 }
 
+.w-4\/5{
+    width: 80%;
+}
+
 .h-auto {
     height: auto;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #fff68e, #FFFFFF) center;
+}
+
+.inline {
+    display: inline;
+}
+
+.hidden {
+    display: none;
 }
