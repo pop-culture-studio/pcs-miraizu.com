@@ -205,51 +205,45 @@
 
     }
 
-    .box5 .h2 {
-        text-align: center;
-        width: 100%;
-        padding: 20px 0 20px 0;
-    }
-
     .box5 ul {
-        width: 50%;
+        /*width: 50%;*/
     }
 
     .box5 li {
-        width: 100%;
-        height: 100px;
-        padding: 30px 0 0 0;
-        margin: 0 0 3px 0;
-        font-weight: bold;
+        /*width: 100%;*/
+        /*height: 100px;*/
+        /*padding: 30px 0 0 0;*/
+        /*margin: 0 0 3px 0;*/
+        /*font-weight: bold;*/
     }
 
     .box5 p {
-        width: 100%;
-        padding: 0 0 0 0;
-        font-weight: bold;
-        margin: 30px 0 0 0;
+        /*width: 100%;*/
+        /*padding: 0 0 0 0;*/
+        /*font-weight: bold;*/
+        /*margin: 30px 0 0 0;*/
     }
 
     .day_a {
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .day_a_li_01 {
-        margin: 0 0 0 0;
+        /*margin: 0 0 0 0;*/
     }
 
     .day_a_li_02 {
-        margin: 0 0 0 0;
+        /*margin: 0 0 0 0;*/
     }
 
     .day_a_li_03 {
-        margin: 0 0 0 0;
+        /*margin: 0 0 0 0;*/
     }
 
     .day_b {
-        width: 100%;
-        text-align: center;
-        margin: 30px 0 0 0;
+        /*width: 100%;*/
+        /*text-align: center;*/
+        /*margin: 30px 0 0 0;*/
     }
 
     .box6 {
