@@ -15,6 +15,10 @@
         width: 20%;
     }
 
+    .md\:w-2\/5{
+        width: 40%;
+    }
+
     .md\:w-3\/5{
         width: 60%;
     }
@@ -156,20 +160,19 @@
     }
 
     .box2 {
-        margin-top: 700px;
+        /*margin-top: 700px;*/
     }
 
-    .box2 ul {
-        width: 100%;
-        padding: 20px 0 0 15%;
-        list-style: disc;
-    }
+    /*.box2 ul {*/
+    /*    width: 100%;*/
+    /*    padding: 20px 0 0 15%;*/
+    /*}*/
 
-    .box2 li {
-        width: 100%;
-        line-height: 30px;
-        letter-spacing: 1px
-    }
+    /*.box2 li {*/
+    /*    width: 100%;*/
+    /*    line-height: 30px;*/
+    /*    letter-spacing: 1px*/
+    /*}*/
 
     .box3 {
 

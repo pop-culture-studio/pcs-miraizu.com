@@ -34,6 +34,7 @@ h2 {
 header {
     height: 300px;
     margin-top: 5%;
+    margin-bottom: 700px;
 }
 
 .scroll-smooth {
@@ -109,6 +110,10 @@ header {
 
 .m-4 {
     margin: 1rem; /* 8px */
+}
+
+.ml-8 {
+    margin-left: 2rem; /* 32px */
 }
 
 .leading-10 {
@@ -274,4 +279,8 @@ header {
 
 .hidden {
     display: none;
+}
+
+.list-disc {
+    list-style-type: disc;
 }
