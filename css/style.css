@@ -60,33 +60,8 @@
     color: #036eb7;
 }
 
-.color08 {
-    color: #EA5762;
-}
-
-.color09 {
-    color: #57b441;
-}
-
-.color10 {
-    color: #ea5762;
-}
-
 .bg-green {
     background-color: #13ae67;
-}
-
-.color12 {
-    background-color: #f8b62d;
-}
-
-.color13 {
-    background-color: #2ea7e0;
-}
-
-.color14 {
-    color: #EC6D7C;
-    font-weight: bold;
 }
 
 .bg-rose {
@@ -95,14 +70,6 @@
 
 .text-rose {
     color: #e7273e;
-}
-
-.color16 {
-    color: #e83828;
-}
-
-.color17 {
-    color: #231815;
 }
 
 .header {
@@ -127,4 +94,17 @@
     font-size: 1.25rem;
     border: 4px #e7273e solid;
     border-radius: 50px 50px;
+}
+
+.box {
+    width: 80%;
+    height: auto;
+    margin: 5% 10% 0 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        width: 60%;
+        margin: 5% 20% 0 20%;
+    }
 }
