@@ -120,3 +120,11 @@
 .bg-gradient {
     background: linear-gradient(135deg, #fff68e, #FFFFFF) center;
 }
+
+.rounded-rose {
+    padding: 0.25rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 4px #e7273e solid;
+    border-radius: 50px 50px;
+}

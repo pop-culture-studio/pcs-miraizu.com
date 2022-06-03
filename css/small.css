@@ -108,54 +108,6 @@
 
     }
 
-    .box7 .h2 {
-        text-align: center;
-        padding: 20px 0 20px 0;
-        margin: 0 0 0 0;
-    }
-
-    .box07_tishou {
-        width: calc(100% / 2);
-    }
-
-    .box7_img_tishou {
-        width: 25%;
-        height: auto;
-        margin: 10% 0 0 0;
-    }
-
-    .box7_tishou_p {
-        width: 120%;
-        height: auto;
-        font-weight: bold;
-        margin: -20% 0 20px 25%;
-        font-size: 1rem;
-    }
-
-    .box07_p {
-        width: 75%;
-        text-align: center;
-        padding: 0.25rem;
-        margin: 20px 0 0 20%;
-        font-weight: bold;
-        font-size: 1.25rem;
-        border: 4px #e7273e solid;
-        border-radius: 50px 50px;
-    }
-
-    .box07_img {
-        width: 10%;
-        text-align: center;
-        margin: 20px 0 0 50%;
-    }
-
-    .box7_01 {
-        font-weight: bold;
-        position: relative;
-        top: 0;
-        left: 60%;
-    }
-
     .box8 {
 
     }
