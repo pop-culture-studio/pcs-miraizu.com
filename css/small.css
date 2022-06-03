@@ -377,17 +377,6 @@
     /*    padding: 10px;*/
     /*}*/
 
-    /* 親要素(コンテナ) */
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    /* 子要素(アイテム) */
-    .flex-item {
-
-    }
-
     /*.img {*/
     /*    width: 50%;*/
     /*    height: auto;*/

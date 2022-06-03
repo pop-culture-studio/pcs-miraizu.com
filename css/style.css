@@ -300,3 +300,11 @@ header {
 .flex-wrap {
     flex-wrap: wrap;
 }
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-contain {
+    object-fit: contain;
+}

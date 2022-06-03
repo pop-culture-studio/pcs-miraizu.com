@@ -395,17 +395,6 @@
         font-weight: bold;
     }
 
-    /* 親要素(コンテナ) */
-    .flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    /* 子要素(アイテム) */
-    .flex-item {
-
-    }
 
     /*.img {*/
     /*    width: calc(100% / 3);*/
