@@ -1,41 +1,4 @@
 @media screen and (max-width: 960px) {
-    .b_style {
-        position: absolute;
-        top: 5%;
-        left: 5%;
-        font-weight: bold;
-        color: #595757;
-        width: 95%;
-        height: auto;
-        z-index: 10;
-    }
-
-    h1 img {
-        /* ロゴの配置位置  */
-        position: absolute;
-        top: 10%;
-        left: 5%;
-        /* 最前面に */
-        z-index: 10;
-        /* ボタンの大きさ  */
-        width: 50%;
-        /*height: auto;*/
-        /*margin: 0 0 0 0;*/
-        /*border-bottom: solid 1px;*/
-        /*border-bottom-color: #595757;*/
-
-    }
-
-    .p_style {
-        position: absolute;
-        top: 20%;
-        left: 5%;
-        color: #595757;
-        font-weight: bold;
-        width: 95%;
-        height: auto;
-        z-index: 10;
-    }
 
     .nav01 {
         width: 40%;
@@ -105,17 +68,6 @@
         padding: 0 0 0 0;
         font-weight: bold;
         line-height: 100px;
-    }
-
-    .girl01 {
-        position: absolute;
-        top: 20%;
-        left: 0;
-    }
-
-    .girl01 img {
-        width: 55%;
-        height: auto;
     }
 
     .girl02_img {
