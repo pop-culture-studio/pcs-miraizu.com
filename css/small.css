@@ -1,52 +1,5 @@
 @media screen and (max-width: 960px) {
 
-    .nav01 {
-        width: 40%;
-        position: absolute;
-        top: 330px;
-        left: 60%;
-    }
-
-    .nav01 li {
-        width: 100%;
-        height: 70px;
-        margin: 3px 0 0 0;
-        text-align: center;
-        padding: 0 0 0 0;
-        line-height: 70px;
-    }
-
-    .nav01 li a {
-        width: 100%;
-        height: 70px;
-        padding: 10px 0 0 0;
-        font-weight: bold;
-    }
-
-    .nav02 {
-        width: 40%;
-        position: absolute;
-        top: 618px;
-        left: 60%;
-        margin: 3px 0 0 0;
-    }
-
-    .nav02 li {
-        width: 100%;
-        height: 70px;
-        margin: 3px 0 0 0;
-        text-align: center;
-        padding: 0 0 0 0;
-        line-height: 70px;
-    }
-
-    .nav02 li a {
-        width: 100%;
-        height: 70px;
-        padding: 10px 0 0 0;
-        font-weight: bold;
-    }
-
     .box0 {
         width: 100%;
         height: 500px;

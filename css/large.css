@@ -1,53 +1,5 @@
 @media screen and (min-width: 960px) {
 
-    .nav01 {
-        width: 60%;
-        position: absolute;
-        top: 500px;
-        left: 25%;
-        display: flex;
-    }
-
-    .nav01 li {
-        width: 20%;
-        height: 100px;
-        text-align: center;
-        margin: 0 0 0 3px;
-        padding: 0 0 0 0;
-        line-height: 100px;
-    }
-
-    .nav01 li a {
-        width: 20%;
-        height: 100px;
-        padding: 10px 0 0 0;
-        font-weight: bold;
-    }
-
-    .nav02 {
-        width: 60%;
-        position: absolute;
-        top: 600px;
-        left: 32%;
-        display: flex;
-    }
-
-    .nav02 li {
-        width: 20%;
-        height: 100px;
-        text-align: center;
-        padding: 0 0 0 0;
-        margin: 3px 0 0 3px;
-        line-height: 100px;
-    }
-
-    .nav02 li a {
-        width: 20%;
-        height: 100px;
-        padding: 0 0 0 0;
-        font-weight: bold;
-    }
-
     .box0 {
         width: 100%;
         background: url("../image/header_back.png") no-repeat center center;
