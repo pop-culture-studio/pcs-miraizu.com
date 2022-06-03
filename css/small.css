@@ -2,21 +2,6 @@
 
 
 
-    .box1 {
-        position: absolute;
-        top: 843px;
-        width: 100%;
-    }
-
-    .box1 p {
-        width: 50%;
-        height: 100px;
-        text-align: center;
-        font-size: 1rem;
-        padding: 0 0 0 0;
-        font-weight: bold;
-        line-height: 100px;
-    }
 
     .girl02_img {
         background: url("../image/girl04.png") no-repeat center;

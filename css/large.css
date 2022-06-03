@@ -1,22 +1,5 @@
 @media screen and (min-width: 960px) {
 
-
-    .box1 {
-        position: absolute;
-        top: 800px;
-        width: 100%;
-    }
-
-    .box1 p {
-        width: 50%;
-        height: 100px;
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 0 0 0 0;
-        font-weight: bold;
-        line-height: 100px;
-    }
-
     .box {
         width: 60%;
         height: auto;
