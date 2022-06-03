@@ -1,41 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-/*html {*/
-/*    font-size: 62.5%; !*pxだと10px;*!*/
-/*}*/
-
-body {
-    /*font-size: 1rem;*/
-    /*background-color: #fff;*/
-}
-
-a {
-    /*text-decoration: none;*/
-}
-
-ol, ul {
-    /*list-style: none;*/
-}
-
-h2 {
-    /*font-size: 2.5rem; !*8px*!*/
-}
-
-* {
-    /*box-sizing: border-box;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-}
-
-::before, ::after {
-    /*box-sizing: inherit;*/
-}
-
-header {
-    height: 300px;
-    margin-top: 5%;
-    margin-bottom: 700px;
-}
 
 .text-gray {
     color: #595757;
