@@ -101,3 +101,7 @@
     height: auto;
     margin: 5% 10% 0 10%;
 }
+
+.nav-button {
+    @apply w-full md:w-1/4 h-[70px] md:h-[100px] flex justify-center items-center;
+}

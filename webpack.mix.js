@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 /*
  |--------------------------------------------------------------------------
@@ -11,9 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'js')
-    .postCss('resources/css/app.css', 'css', [
-        require('postcss-import'),
-        require('tailwindcss'),
-    ])
-    .disableNotifications();
+mix.options({
+  processCssUrls: false,
+}).js('resources/js/app.js', 'js').postCss('resources/css/app.css', 'css', [
+  require('postcss-import'),
+  require('tailwindcss'),
+]).disableNotifications()
