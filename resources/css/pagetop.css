@@ -25,6 +25,7 @@
     color: #fff;
     /*円形にする指定。この１行を削除すると正方形になります。*/
     border-radius: 50%;
+    z-index: 100;
 }
 
 .is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
