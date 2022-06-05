@@ -73,15 +73,11 @@
 }
 
 .header {
-    width: 100%;
-    height: 300px;
+    @apply w-full h-[300px];
 }
 
 .h2_border {
-    padding: 20px 0 10px 0;
-    font-size: 1.75rem;
-    font-weight: bold;
-    border-bottom: solid 2px #595757;
+    @apply pt-4 pb-2 text-3xl font-bold border-b-2 border-gray-500;
 }
 
 .bg-gradient {
@@ -89,17 +85,11 @@
 }
 
 .rounded-rose {
-    padding: 0.25rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    border: 4px #e7273e solid;
-    border-radius: 50px 50px;
+    @apply p-1 font-bold text-xl border-4 border-[#e7273e] rounded-[50px];
 }
 
 .box {
-    width: 80%;
-    height: auto;
-    margin: 5% 10% 0 10%;
+    @apply w-4/5 h-auto my-12 mx-auto;
 }
 
 .nav-button {
