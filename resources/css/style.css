@@ -11,5 +11,5 @@
 }
 
 .nav-button {
-    @apply w-full md:w-1/4 h-[70px] md:h-[100px] flex justify-center items-center;
+    @apply w-full h-[70px] md:h-[100px] flex justify-center items-center;
 }

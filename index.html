@@ -59,8 +59,8 @@
                          class="w-[55%] md:w-[70%]" alt="女の子"></p>
             </div>
         </div>
-        <nav class="h-[530px] bg-[url('/image/header_back.png')] bg-repeat-y md:bg-no-repeat bg-cover font-bold">
-            <ul class="w-2/5 md:w-3/5 absolute top-[322px] md:top-[500px] left-[60%] md:left-[25%] md:flex space-y-1 md:space-y-0 md:space-x-1">
+        <nav class="h-fit w-full bg-[url('/image/header_back.png')] bg-repeat-y md:bg-no-repeat bg-cover font-bold flex flex-col py-3 md:p-6 -z-100">
+            <ul class="w-2/5 md:w-3/5 grid grid-cols-1 md:grid-cols-4 justify-end gap-y-1  md:gap-x-1 self-end md:mr-20 z-10">
                 <li class="bg-yellow nav-button"><a
                         class="text-white" href="#pcs">PCSとは</a></li>
                 <li class="bg-lime nav-button"><a
@@ -69,9 +69,9 @@
                         class="text-white" href="#job_description">仕事内容</a></li>
                 <li class="bg-red nav-button"><a
                         class="text-white" href="#flow_of_the_day">1日の流れ</a></li>
-            </ul>
-            <ul class="w-2/5 md:w-3/5 absolute top-[618px] md:top-[604px] left-[60%] md:left-[32%] md:flex space-y-1 md:space-y-0 md:space-x-1">
-                <li class="bg-pink nav-button"><a
+</ul>
+            <ul class="w-2/5 md:w-2/5 grid grid-cols-1 md:grid-cols-3 justify-end  gap-y-1 md:gap-x-1 self-end md:mr-52 mt-1 z-10">
+                <li class="bg-pink nav-button "><a
                         class="text-white" href="#question">よくあるご質問</a></li>
                 <li class="bg-rose nav-button"><a
                         class="text-white" href="#how_t_use">ご利用方法</a></li>
@@ -79,12 +79,13 @@
                         class="text-white" href="#information">施設情報</a></li>
             </ul>
         </nav>
-        <div class="absolute top-[843px] md:top-[800px] w-full">
+        <div class="w-full">
             <div class="flex flex-row flex-wrap h-[100px] text-center text-base md:text-2xl font-bold">
-                <p class="bg-pink w-1/2 flex justify-center items-center"><a href="tel:0922925417" class="text-white"
+                <p class="bg-pink w-1/2 flex justify-center items-center"><a href="tel:0922925417" class="text-white z-10"
                                                                              target="_blank">TEL</a></p>
-                <p class="bg-blue w-1/2 flex justify-center items-center"><a href="mailto:info&#64;example.com"
-                                                                             class="text-white">お問い合わせ（メール）</a></p>
+                <p class="bg-blue w-1/2 flex justify-center items-center">
+                    <a href="mailto:info&#64;example.com"
+                       class="text-white z-10">お問い合わせ（メール）</a></p>
             </div>
         </div>
     </header>
