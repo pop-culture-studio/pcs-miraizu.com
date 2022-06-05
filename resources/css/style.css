@@ -1,91 +1,9 @@
-@charset "utf-8";
-
-.text-gray {
-    color: #595757;
-}
-
-.bg-yellow {
-    background-color: #f9bc00;
-}
-
-.text-yellow {
-    color: #f9bc00;
-}
-
-.bg-lime {
-    background-color: #7bbd39;
-}
-
-.text-lime {
-    color: #7bbd39;
-}
-
-.bg-sky {
-    background-color: #00b7eb;
-}
-
-.text-sky {
-    color: #00b7eb;
-}
-
-.bg-red {
-    background-color: #ec7058;
-}
-
-.text-red {
-    color: #ec7058;
-}
-
-.bg-pink {
-    background-color: #eb6d7c;
-}
-
-.text-pink {
-    color: #eb6d7c;
-}
-
-.bg-orange {
-    background-color: #f1932c;
-}
-
-.text-orange {
-    color: #f1932c;
-}
-
-.bg-blue {
-    background-color: #036eb7;
-}
-
-.text-blue {
-    color: #036eb7;
-}
-
-.bg-green {
-    background-color: #13ae67;
-}
-
-.bg-rose {
-    background-color: #e7273e;
-}
-
-.text-rose {
-    color: #e7273e;
-}
-
-.header {
-    @apply w-full h-[300px];
-}
-
 .h2_border {
     @apply pt-4 pb-2 text-3xl font-bold border-b-2 border-gray-500;
 }
 
-.bg-gradient {
-    background: linear-gradient(135deg, #fff68e, #FFFFFF) center;
-}
-
 .rounded-rose {
-    @apply p-1 font-bold text-xl border-4 border-[#e7273e] rounded-[50px];
+    @apply p-1 font-bold text-xl border-4 border-rose rounded-[50px];
 }
 
 .box {
