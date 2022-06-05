@@ -3,7 +3,7 @@
 }
 
 .rounded-rose {
-    @apply p-1 font-bold text-xl border-4 border-rose rounded-[50px];
+    @apply p-1 font-bold text-xl border-4 border-rose rounded-full;
 }
 
 .box {
