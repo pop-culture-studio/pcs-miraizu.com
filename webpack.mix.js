@@ -13,7 +13,7 @@ const mix = require('laravel-mix')
 
 mix.options({
   processCssUrls: false,
-}).js('resources/js/app.js', 'js').postCss('resources/css/app.css', 'css', [
+}).postCss('resources/css/app.css', 'css', [
   require('postcss-import'),
   require('tailwindcss'),
 ]).disableNotifications()
