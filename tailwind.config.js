@@ -8,6 +8,9 @@ module.exports = {
 
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['"M PLUS Rounded 1c"', ...defaultTheme.fontFamily.sans],
+            },
             colors: {
                 gray: {
                     DEFAULT: '#595757'
