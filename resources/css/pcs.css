@@ -14,6 +14,10 @@
     @apply w-full h-16 md:h-24 flex justify-center items-center;
 }
 
+.pcs\:scale-up-image {
+    @apply md:transition md:ease-out md:duration-150 md:hover:scale-125 md:hover:cursor-pointer;
+}
+
 .pcs\:back-to-top {
     top: 100vh;
     @apply absolute right-3 bottom-0 w-12 pointer-events-none;
