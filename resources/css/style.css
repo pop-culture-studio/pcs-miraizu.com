@@ -1,15 +1,15 @@
-.h2_border {
+.pcs\:h2_border {
     @apply pt-4 pb-2 text-3xl font-bold border-b-2 border-gray-500;
 }
 
-.rounded-rose {
+.pcs\:rounded-rose {
     @apply p-1 font-bold text-xl border-4 border-rose rounded-full;
 }
 
-.box {
+.pcs\:box {
     @apply w-4/5 h-auto my-12 mx-auto;
 }
 
-.nav-button {
+.pcs\:nav-button {
     @apply w-full h-16 md:h-24 flex justify-center items-center;
 }
