@@ -19,11 +19,9 @@
 }
 
 .pcs\:back-to-top {
-    top: 100vh;
-    @apply absolute right-3 bottom-0 w-12 pointer-events-none;
+    @apply top-[100vh] absolute right-3 bottom-0 w-12 pointer-events-none;
 }
 
 .pcs\:back-to-top-button {
-    @apply sticky inline-block no-underline text-white text-center rounded-full w-12 h-12 bg-black opacity-50 hover:opacity-30 p-3 pointer-events-auto z-50;
-    top: calc(100vh - 4rem);
+    @apply sticky top-[calc(100vh_-_4rem)] inline-block no-underline text-white text-center rounded-full w-12 h-12 bg-black opacity-50 hover:opacity-30 p-3 pointer-events-auto z-50;
 }
