@@ -1,5 +1,5 @@
 .pcs\:h2_border {
-    @apply pt-4 pb-2 text-3xl font-bold border-b-2 border-gray-500;
+    @apply pt-4 pb-2 text-3xl font-bold border-b-2;
 }
 
 .pcs\:rounded-rose {
