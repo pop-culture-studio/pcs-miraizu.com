@@ -1,5 +1,31 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@import './pcs.css';
+.pcs\:h2_border {
+    @apply pt-4 pb-2 text-3xl font-bold border-b-2;
+}
+
+.pcs\:rounded-rose {
+    @apply p-1 font-bold text-xl border-4 border-rose rounded-full;
+}
+
+.pcs\:box {
+    @apply w-4/5 h-auto my-12 mx-auto;
+}
+
+.pcs\:nav-button {
+    @apply w-full h-16 md:h-24 flex justify-center items-center;
+}
+
+.pcs\:scale-up-image {
+    @apply md:transition md:ease-out md:duration-150 md:hover:scale-125 md:hover:cursor-pointer;
+}
+
+.pcs\:back-to-top {
+    @apply top-[100vh] absolute right-3 bottom-0 w-12 pointer-events-none;
+}
+
+.pcs\:back-to-top-button {
+    @apply sticky top-[calc(100vh_-_4rem)] inline-block no-underline text-white text-center rounded-full w-12 h-12 bg-black opacity-50 hover:opacity-30 p-3 pointer-events-auto z-50;
+}
