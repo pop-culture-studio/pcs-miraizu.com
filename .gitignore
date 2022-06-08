@@ -1,4 +1,3 @@
-sitemap/
-_notes/
 .idea/
 node_modules
+public/mix-manifest.json

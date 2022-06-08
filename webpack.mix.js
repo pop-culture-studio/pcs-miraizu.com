@@ -11,9 +11,9 @@ const mix = require('laravel-mix')
  |
  */
 
-mix.options({
-  processCssUrls: false,
-}).postCss('resources/css/app.css', 'css', [
-  require('postcss-import'),
-  require('tailwindcss'),
-]).disableNotifications()
+mix.setPublicPath('public/').
+  postCss('resources/css/app.css', 'css', [
+    require('postcss-import'),
+    require('tailwindcss'),
+  ]).
+  disableNotifications()
