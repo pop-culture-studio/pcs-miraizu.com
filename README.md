@@ -7,6 +7,9 @@
 
 ここの説明を理解できる人じゃないと扱えない。
 
+- CSS : Tailwind
+- サーバー : Vercel
+
 ```bash
 git clone ...
 
