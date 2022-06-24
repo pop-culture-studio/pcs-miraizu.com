@@ -14,17 +14,17 @@
 git clone ...
 
 npm install
-npm run dev
+npm run prod
 ```
 
 開発中はローカルサーバーを起動。
 ```bash
-php -S localhost:8000 -t ./public
+npm run dev
 ```
-http://localhost:8000/  
+http://localhost:3000/  
 Ctrl + Cで終了。
 
 プッシュ前には`npm run prod`でビルド。デプロイ時に自動ビルドされるので厳密に実行しなくてもいい。
 
 index.htmlと画像はpublic内のファイルを直接変更。  
-CSSはresources内のファイルを変更。public/css/のファイルは触らない。
+CSSはresources内のファイルを変更。public/build/のファイルは触らない。
