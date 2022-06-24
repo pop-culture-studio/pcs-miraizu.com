@@ -24,7 +24,5 @@ npm run dev
 http://localhost:3000/  
 Ctrl + Cで終了。
 
-プッシュ前には`npm run prod`でビルド。デプロイ時に自動ビルドされるので厳密に実行しなくてもいい。
-
 index.htmlと画像(image/内)はファイルを直接変更。  
 CSSはresources内のファイルを変更。dist/のファイルは触らない。
