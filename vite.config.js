@@ -5,7 +5,13 @@ export default defineConfig({
   plugins: [
     laravel([
       'resources/css/app.css',
-      //'resources/js/app.js',
     ]),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]',
+      },
+    },
+  },
 })
