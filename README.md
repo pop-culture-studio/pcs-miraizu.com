@@ -14,7 +14,7 @@
 git clone ...
 
 npm install
-npm run prod
+npm run build
 ```
 
 開発中はローカルサーバーを起動。
