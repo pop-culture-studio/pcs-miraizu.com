@@ -11,6 +11,7 @@ https://pcs-miraizu.com/
 
 - CSS : Tailwind
 - サーバー : Vercel
+- ドメイン：ムームードメイン
 
 ```bash
 git clone ...
