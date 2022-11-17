@@ -41,6 +41,9 @@ module.exports = {
                 },
                 rose: {
                     DEFAULT: '#e7273e'
+                },
+                note: {
+                    DEFAULT: '#41C9B4'
                 }
             }
         },
