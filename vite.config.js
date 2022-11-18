@@ -6,6 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         app: 'index.html',
+        css: './resources/css/app.css',
       },
       // output: {
       //   assetFileNames: 'assets/[name][extname]',
