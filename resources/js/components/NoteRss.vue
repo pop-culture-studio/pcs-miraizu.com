@@ -9,27 +9,12 @@
   </ul>
 </template>
 
-<script>
-import axios from 'axios'
+<script setup>
+import { ref } from 'vue'
 
-export default {
-  name: 'NoteRss',
-  data () {
-    return {
-      url: 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json',
-      items: [],
-    }
-  },
-  mounted () {
-    axios.get(this.url).then((res) => {
-      this.items = res.data
-    }).catch((error) => {
-      console.log(error)
-    })
-  },
-}
+const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
+
+const items = ref([])
+
+fetch(url).then((response) => response.json()).then((data) => items.value = data)
 </script>
-
-<style scoped>
-
-</style>
