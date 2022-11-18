@@ -4,7 +4,7 @@
       <a :href="item.link" class="text-2xl text-blue hover:underline" target="_blank">
         {{ item.title }}
       </a>
-      {{ item.date }}
+      <span class="ml-3 text-gray-500">{{ item.date }}</span>
     </li>
   </ul>
 </template>
@@ -23,6 +23,8 @@ export default {
   mounted () {
     axios.get(this.url).then((res) => {
       this.items = res.data
+    }).catch((error) => {
+      console.log(error)
     })
   },
 }
