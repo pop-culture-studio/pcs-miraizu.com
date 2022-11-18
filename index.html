@@ -26,10 +26,12 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap">
 
+    <script type="module" src="/resources/js/app.js" defer></script>
     <link rel="stylesheet" href="/resources/css/app.css">
+
 </head>
 <body class="font-sans antialiased">
-<main class="relative">
+<main class="relative" id="app">
     <header>
         <div class="h-fit pt-1 pb-6 md:pb-20">
             <div id="top">
@@ -111,7 +113,7 @@
                         <a class="text-white" href="#information">施設情報</a>
                     </li>
                     <li class="bg-note pcs:nav-button">
-                        <a class="text-white" href="https://note.com/pcs_miraizu" target="_blank">メンバーブログ</a>
+                        <a class="text-white" href="#blog">メンバーブログ</a>
                     </li>
                 </ul>
             </nav>
@@ -437,6 +439,16 @@
         </div>
     </section>
 
+
+    <section class="pcs:box" id="blog">
+        <h2 class="pcs:h2_border border-note text-note text-center md:text-left">メンバーブログ</h2>
+
+        <div class="p-2">
+            <note-rss-component></note-rss-component>
+        </div>
+
+    </section>
+
     <footer class="bg-[url('/image/header_back.png')] bg-repeat-y md:bg-no-repeat bg-cover">
         <div class="md:grid md:grid-cols-2">
             <div class="p-6 font-bold">
@@ -475,7 +487,7 @@
                         <a class="text-white" href="#information">施設情報</a>
                     </li>
                     <li class="bg-note pcs:nav-button">
-                        <a class="text-white" href="https://note.com/pcs_miraizu" target="_blank">メンバーブログ</a>
+                        <a class="text-white" href="#blog">メンバーブログ</a>
                     </li>
                 </ul>
             </nav>
