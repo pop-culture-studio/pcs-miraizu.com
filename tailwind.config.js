@@ -4,6 +4,7 @@ module.exports = {
 
     content: [
         './index.html',
+        './resources/js/components/*'
     ],
 
     theme: {
