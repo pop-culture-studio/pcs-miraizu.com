@@ -4,7 +4,7 @@
       <a :href="item.link" class="text-2xl text-blue hover:underline" target="_blank">
         {{ item.title }}
       </a>
-      <span class="ml-3 text-gray-500">{{ item.date }}</span>
+      <span class="ml-3 text-gray-500">{{ item.date }} ({{ item.diff }})</span>
     </li>
   </ul>
 </template>
