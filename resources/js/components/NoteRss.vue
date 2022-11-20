@@ -1,9 +1,9 @@
 <template>
   <div>
-    <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded shadow">
+    <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border  rounded hover:shadow-sm">
       <div>
         <a :href="item.link" target="_blank">
-          <img :src="item.thumbnail" :alt="item.title" :title="item.title" class="hover:opacity-70">
+          <img :src="item.thumbnail" loading="lazy" :alt="item.title" :title="item.title" class="hover:opacity-70">
         </a>
       </div>
 
@@ -17,7 +17,7 @@
           </a>
         </h3>
 
-        <div v-html="item.description" class="prose prose-sm prose-a:text-blue"></div>
+        <div v-html="item.description" class="prose prose-sm prose-a:text-blue prose-p:text-gray-500"></div>
       </div>
     </article>
   </div>
