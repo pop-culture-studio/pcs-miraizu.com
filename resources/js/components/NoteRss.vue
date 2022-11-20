@@ -1,19 +1,26 @@
 <template>
-  <ul>
-    <li v-for="item in items" class="my-3">
-      <a :href="item.link" class="text-2xl text-blue hover:underline" target="_blank">
-        {{ item.title }}
-      </a>
-      <time class="ml-3 text-gray-500" :datetime="item.date + 'T' + item.time">
-        {{ item.date }} ({{ item.diff }})
-      </time>
-      <div class="w-auto sm:w-1/2 mt-2">
+  <div>
+    <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded shadow">
+      <div>
         <a :href="item.link" target="_blank">
-          <img :src="item.thumbnail" :alt="item.title" :title="item.title" class="rounded shadow hover:opacity-70">
+          <img :src="item.thumbnail" :alt="item.title" :title="item.title" class="hover:opacity-70">
         </a>
       </div>
-    </li>
-  </ul>
+
+      <div class="p-2 sm:py-0">
+        <time class="text-gray-500" :datetime="item.date + 'T' + item.time">
+          {{ item.date }} ({{ item.diff }})
+        </time>
+        <h3 class="my-2 text-2xl">
+          <a :href="item.link" class="text-blue underline" target="_blank">
+            {{ item.title }}
+          </a>
+        </h3>
+
+        <div v-html="item.description" class="prose prose-sm prose-a:text-blue"></div>
+      </div>
+    </article>
+  </div>
 </template>
 
 <script setup>
