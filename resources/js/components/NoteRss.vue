@@ -3,7 +3,7 @@
     <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border  rounded hover:shadow-sm">
       <div>
         <a :href="item.link" target="_blank">
-          <img :src="item.thumbnail" loading="lazy" :alt="item.title" :title="item.title" class="hover:opacity-70">
+          <img :src="item.thumbnail" loading="lazy" :alt="item.title" :title="item.title" class="hover:opacity-80">
         </a>
       </div>
 
