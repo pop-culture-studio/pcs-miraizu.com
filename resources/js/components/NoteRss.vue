@@ -12,7 +12,7 @@
           {{ item.date }} ({{ item.diff }})
         </time>
         <h3 class="my-2 text-2xl">
-          <a :href="item.link" class="text-blue underline" target="_blank">
+          <a :href="item.link" class="text-blue" target="_blank">
             {{ item.title }}
           </a>
         </h3>
