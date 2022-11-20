@@ -8,9 +8,16 @@ export default defineConfig({
         app: 'index.html',
         css: './resources/css/app.css',
       },
-      // output: {
-      //   assetFileNames: 'assets/[name][extname]',
-      // },
+      output: {
+        entryFileNames: 'assets/js/[name].[hash].js',
+        assetFileNames: (assetInfo) => {
+          let ext = assetInfo.name.split('.').pop()
+          if (/png|jpg|svg|gif/i.test(ext)) {
+            ext = 'images'
+          }
+          return `assets/${ext}/[name].[hash][extname]`
+        },
+      },
     },
   },
   plugins: [
