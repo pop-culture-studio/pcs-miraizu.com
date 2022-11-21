@@ -21,13 +21,35 @@ npm install
 npm run build
 ```
 
-開発中はローカルサーバーを起動。プロジェクト直下のindex.htmlを直接表示しても正しく表示されない。必ずサーバーを起動する。
+開発中はローカルサーバーを起動。
 ```bash
 npm run dev
 ```
 http://localhost:5173/  
 Ctrl + Cで終了。
 
-index.htmlと画像(image/内)はファイルを直接変更。  
-CSS/JSはresources内のファイルを変更。dist/のファイルは触らない。  
-public内のファイルは何も変更されずにdistにコピーされる。
+### index.html
+プロジェクト直下のindex.htmlを直接表示しても正しく表示されない。必ずサーバーを起動する。
+
+ビルドすると中身が多少変更されてdist/index.htmlにコピーされる。  
+index.htmlを変更→ビルドしてdist/index.htmlを生成、の基本的な流れを覚える必要がある。
+
+### 画像(image内)
+画像を追加・変更するにはimage内の画像を変更。  
+htmlでは`<img src="/image/logo.png">`のように使用。  
+
+ビルドするとdist/index.htmlでは`<img src="/assets/images/logo.123.png">`と書き換えられる。
+
+### CSS/JS(resources内)
+CSS/JSを変更するにはresources内のファイルを変更。distのファイルは触らない。  
+TailwindなのでCSSを変更することは少ない。
+
+### public
+public内のファイルはビルド時に何も変更されずにdistにコピーされる。ファイル名を変更したくない画像などに使用。
+
+### dist
+最終的に https://pcs-miraizu.com/ で公開されるのはdist内のファイルだけ。  
+最初は存在しない。ビルド後のファイルがdist内に生成される。dist内のファイルを直接触ることはない。
+
+### ブログのRSS
+https://github.com/pop-culture-studio/feed2json でrssからjsonに変換しているのでこっちではjsonを読み込んで表示しているだけ。
