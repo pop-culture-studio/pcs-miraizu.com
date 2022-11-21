@@ -10,6 +10,7 @@ https://pcs-miraizu.com/
 ここの説明を理解できる人じゃないと扱えない。
 
 - CSS : Tailwind
+- JS : Vue.js
 - サーバー : Vercel
 - ドメイン：ムームードメイン
 
@@ -20,12 +21,13 @@ npm install
 npm run build
 ```
 
-開発中はローカルサーバーを起動。
+開発中はローカルサーバーを起動。プロジェクト直下のindex.htmlを直接表示しても正しく表示されない。必ずサーバーを起動する。
 ```bash
 npm run dev
 ```
-http://localhost:3000/  
+http://localhost:5173/  
 Ctrl + Cで終了。
 
 index.htmlと画像(image/内)はファイルを直接変更。  
-CSSはresources内のファイルを変更。dist/のファイルは触らない。
+CSS/JSはresources内のファイルを変更。dist/のファイルは触らない。  
+public内のファイルは何も変更されずにdistにコピーされる。
