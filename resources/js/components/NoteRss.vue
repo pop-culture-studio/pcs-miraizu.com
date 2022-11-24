@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <template v-if="items.length > 0">
     <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded hover:shadow-sm">
       <div>
         <a :href="item.link" target="_blank">
@@ -20,7 +20,7 @@
         <div v-html="item.description" class="prose prose-sm prose-a:text-blue prose-p:text-gray-500"></div>
       </div>
     </article>
-  </div>
+  </template>
 </template>
 
 <script setup>
