@@ -1,4 +1,6 @@
 <script setup>
+import NoteTime from './NoteTime.vue'
+
 const props = defineProps({
   title: String,
   link: String,
@@ -6,15 +8,7 @@ const props = defineProps({
   description: String,
   date: String,
   time: String,
-  diff: String,
 })
-
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import 'dayjs/locale/ja';
-
-dayjs.extend(relativeTime);
-dayjs.locale('ja');
 </script>
 
 <template>
@@ -26,9 +20,7 @@ dayjs.locale('ja');
     </div>
 
     <div class="p-3 sm:py-1">
-      <time :datetime="`${date}T${time}`" class="text-gray-500">
-        {{ date }} ({{ dayjs(`${date} ${time}`).fromNow() }})
-      </time>
+      <NoteTime :date="date" :time="time"></NoteTime>
 
       <h3 class="my-2 text-2xl">
         <a :href="link" class="text-blue font-bold hover:underline" target="_blank">
