@@ -9,7 +9,7 @@
 
       <div class="p-2 sm:py-0">
         <time class="text-gray-500" :datetime="item.date + 'T' + item.time">
-          {{ item.date }} ({{ item.diff }})
+          {{ item.date }} ({{ dayjs(item.date + ' ' + item.time).fromNow() }})
         </time>
         <h3 class="my-2 text-2xl">
           <a :href="item.link" class="text-blue font-bold hover:underline" target="_blank">
@@ -25,6 +25,12 @@
 
 <script setup>
 import { ref } from 'vue'
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import 'dayjs/locale/ja';
+
+dayjs.extend(relativeTime);
+dayjs.locale('ja');
 
 const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
 
