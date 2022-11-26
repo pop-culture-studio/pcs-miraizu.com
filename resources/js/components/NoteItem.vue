@@ -19,7 +19,7 @@ const props = defineProps({
 
 <template>
   <article class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded hover:shadow-sm">
-    <div>
+    <div v-if="thumbnail.startsWith('http')">
       <a :href="link" target="_blank">
         <img :src="thumbnail" loading="lazy" :alt="title" :title="title" class="hover:opacity-80">
       </a>
@@ -29,6 +29,7 @@ const props = defineProps({
       <time class="text-gray-500" :datetime="`${date}T${time}`">
         {{ date }} ({{ dayjs(`${date} ${time}`).fromNow() }})
       </time>
+
       <h3 class="my-2 text-2xl">
         <a :href="link" class="text-blue font-bold hover:underline" target="_blank">
           {{ title }}
