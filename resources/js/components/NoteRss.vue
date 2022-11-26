@@ -1,3 +1,19 @@
+<script setup>
+import {ref} from 'vue'
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import 'dayjs/locale/ja';
+
+dayjs.extend(relativeTime);
+dayjs.locale('ja');
+
+const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
+
+const items = ref([])
+
+fetch(url).then(res => res.json()).then(json => items.value = json)
+</script>
+
 <template>
   <template v-if="items.length > 0">
     <article v-for="item in items" class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded hover:shadow-sm">
@@ -22,19 +38,3 @@
     </article>
   </template>
 </template>
-
-<script setup>
-import {ref} from 'vue'
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import 'dayjs/locale/ja';
-
-dayjs.extend(relativeTime);
-dayjs.locale('ja');
-
-const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
-
-const items = ref([])
-
-fetch(url).then(res => res.json()).then(json => items.value = json)
-</script>
