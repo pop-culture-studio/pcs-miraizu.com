@@ -21,12 +21,12 @@ dayjs.locale('ja');
   <article class="my-3 grid grid-cols-1 sm:grid-cols-2 border rounded hover:shadow-sm">
     <div v-if="thumbnail.startsWith('http')">
       <a :href="link" target="_blank">
-        <img :src="thumbnail" loading="lazy" :alt="title" :title="title" class="hover:opacity-80">
+        <img :src="thumbnail" :alt="title" :title="title" class="hover:opacity-80" loading="lazy">
       </a>
     </div>
 
     <div class="p-2 sm:py-0">
-      <time class="text-gray-500" :datetime="`${date}T${time}`">
+      <time :datetime="`${date}T${time}`" class="text-gray-500">
         {{ date }} ({{ dayjs(`${date} ${time}`).fromNow() }})
       </time>
 
