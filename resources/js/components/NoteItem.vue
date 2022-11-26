@@ -25,7 +25,7 @@ dayjs.locale('ja');
       </a>
     </div>
 
-    <div class="p-2 sm:py-0">
+    <div class="p-3 sm:py-1">
       <time :datetime="`${date}T${time}`" class="text-gray-500">
         {{ date }} ({{ dayjs(`${date} ${time}`).fromNow() }})
       </time>
