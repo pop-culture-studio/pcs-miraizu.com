@@ -8,8 +8,8 @@
       </div>
 
       <div class="p-2 sm:py-0">
-        <time class="text-gray-500" :datetime="item.date + 'T' + item.time">
-          {{ item.date }} ({{ dayjs(item.date + ' ' + item.time).fromNow() }})
+        <time class="text-gray-500" :datetime="`${item.date}T${item.time}`">
+          {{ item.date }} ({{ dayjs(`${item.date} ${item.time}`).fromNow() }})
         </time>
         <h3 class="my-2 text-2xl">
           <a :href="item.link" class="text-blue font-bold hover:underline" target="_blank">
@@ -36,5 +36,5 @@ const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
 
 const items = ref([])
 
-fetch(url).then((response) => response.json()).then((data) => items.value = data)
+fetch(url).then((res) => res.json()).then((json) => items.value = json)
 </script>
