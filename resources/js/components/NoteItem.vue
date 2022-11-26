@@ -1,20 +1,20 @@
 <script setup>
+const props = defineProps({
+  title: String,
+  link: String,
+  thumbnail: String,
+  description: String,
+  date: String,
+  time: String,
+  diff: String,
+})
+
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import 'dayjs/locale/ja';
 
 dayjs.extend(relativeTime);
 dayjs.locale('ja');
-
-const props = defineProps({
-  title: String,
-  link: String,
-  thumbnail: String,
-  date: String,
-  time: String,
-  diff: String,
-  description: String,
-})
 </script>
 
 <template>
