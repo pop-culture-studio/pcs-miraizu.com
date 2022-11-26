@@ -12,6 +12,8 @@ const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
 const items = ref([])
 
 fetch(url).then(res => res.json()).then(json => items.value = json)
+
+const diff = (date, time) => dayjs(`${date} ${time}`).fromNow();
 </script>
 
 <template>
@@ -25,7 +27,7 @@ fetch(url).then(res => res.json()).then(json => items.value = json)
 
       <div class="p-2 sm:py-0">
         <time class="text-gray-500" :datetime="`${item.date}T${item.time}`">
-          {{ item.date }} ({{ dayjs(`${item.date} ${item.time}`).fromNow() }})
+          {{ item.date }} ({{ diff(item.date, item.time) }})
         </time>
         <h3 class="my-2 text-2xl">
           <a :href="item.link" class="text-blue font-bold hover:underline" target="_blank">
