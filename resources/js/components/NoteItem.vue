@@ -2,12 +2,12 @@
 import NoteTime from './NoteTime.vue'
 
 const props = defineProps({
-  title: String,
   link: String,
-  thumbnail: String,
-  description: String,
   date: String,
   time: String,
+  title: String,
+  thumbnail: String,
+  description: String,
 })
 </script>
 
