@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import handlebars from 'vite-plugin-handlebars';
+import { resolve } from 'path';
 
 export default defineConfig({
   build: {
@@ -28,6 +30,9 @@ export default defineConfig({
           includeAbsolute: false,
         },
       },
+    }),
+    handlebars({
+      partialDirectory: resolve(__dirname, 'resources/views/'),
     }),
   ],
   resolve: {

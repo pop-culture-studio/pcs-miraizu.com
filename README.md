@@ -29,6 +29,8 @@ http://localhost:5173/
 Ctrl + Cで終了。
 
 ### index.html
+htmlは`resources/views`に分割。
+
 プロジェクト直下のindex.htmlを直接表示しても正しく表示されない。必ずサーバーを起動する。
 
 ビルドすると中身が多少変更されてdist/index.htmlにコピーされる。  
