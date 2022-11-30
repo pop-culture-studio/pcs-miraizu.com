@@ -15,7 +15,7 @@ dayjs.locale('ja')
 </script>
 
 <template>
-  <time :datetime="dayjs(`${date} ${time}`).format()" class="text-gray-500">
+  <time :datetime="dayjs(`${date} ${time}`).format()">
     {{ dayjs(date).format('LL') }} ({{ dayjs(`${date} ${time}`).fromNow() }})
   </time>
 </template>
