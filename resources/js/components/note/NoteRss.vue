@@ -10,5 +10,5 @@ fetch(url).then(res => res.json()).then(json => items.value = json)
 </script>
 
 <template>
-  <NoteItem v-for="item in items" v-bind="item"></NoteItem>
+  <NoteItem v-for="item in items" :key="item.link" v-bind="item" />
 </template>
