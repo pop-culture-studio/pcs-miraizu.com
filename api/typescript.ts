@@ -8,6 +8,5 @@ export default async function (req: VercelRequest, response: VercelResponse) {
 
     const data = await res.json();
 
-    response.setHeader('Content-Type', 'application/json; charset=utf-8')
-    response.send(data);
+    response.setHeader('Content-Type', 'application/json; charset=utf-8').send(data);
 }

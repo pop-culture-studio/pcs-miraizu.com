@@ -7,6 +7,5 @@ export default async function (req, response) {
 
     const data = await res.json();
 
-    response.setHeader('Content-Type', 'application/json; charset=utf-8')
-    response.send(data);
+    response.setHeader('Content-Type', 'application/json; charset=utf-8').send(data);
 }
