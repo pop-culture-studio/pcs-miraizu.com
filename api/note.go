@@ -35,6 +35,8 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
+  w.Header().Set("Content-Type", "application/json; charset=utf-8")
+
 	err = json.NewEncoder(w).Encode(data)
 	if err != nil {
 		log.Fatal(err)
