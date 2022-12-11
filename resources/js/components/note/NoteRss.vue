@@ -1,5 +1,5 @@
 <script setup>
-const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json'
+const url = import.meta.env.VITE_NOTE_URL
 
 import NoteItem from './NoteItem.vue'
 import { ref } from 'vue'
