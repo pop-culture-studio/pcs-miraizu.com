@@ -1,7 +1,7 @@
 package handler
 
 import (
-  "fmt"
+	"fmt"
 	"io"
 	"log"
 	"net/http"
@@ -16,13 +16,13 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer res.Body.Close()
 
-  json, err := io.ReadAll(res.Body)
+	json, err := io.ReadAll(res.Body)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-  w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 
 	fmt.Fprintln(w, string(json))
 }
