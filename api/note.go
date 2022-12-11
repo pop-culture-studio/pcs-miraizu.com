@@ -22,5 +22,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
+  w.Header().Set("Content-Type", "application/json; charset=utf-8")
+
 	fmt.Fprintln(w, string(json))
 }
