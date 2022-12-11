@@ -22,5 +22,5 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	fmt.Println(w, string(json))
+	fmt.Fprintln(w, string(json))
 }
