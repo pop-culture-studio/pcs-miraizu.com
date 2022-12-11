@@ -1,6 +1,6 @@
 import type {VercelRequest, VercelResponse} from '@vercel/node';
 
-const url = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json';
+const url: string = 'https://d2ttuujo1i51fi.cloudfront.net/note_pcs_miraizu.json';
 
 export default async function (req: VercelRequest, response: VercelResponse) {
     const res: Response = await fetch(url);
