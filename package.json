@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "pcs-miraizu.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
