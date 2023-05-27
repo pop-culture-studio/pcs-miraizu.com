@@ -28,7 +28,7 @@ const props = defineProps({
         </a>
       </h3>
 
-      <div v-html="description" class="prose prose-sm prose-a:text-blue prose-p:text-gray-500"></div>
+      <div v-html="description" class="prose prose-md prose-a:text-blue prose-p:text-gray-500"></div>
     </div>
   </article>
 </template>
