@@ -51,7 +51,7 @@ public内のファイルはビルド時に何も変更されずにdistにコピ�
 
 ### dist
 最終的に https://pcs-miraizu.com/ で公開されるのはdist内のファイルだけ。  
-最初は存在しない。ビルド後のファイルがdist内に生成される。dist内のファイルを直接触ることはない。
+ビルド後のファイルがdist内に生成される。dist内のファイルを直接触ることはない。
 
 ### ブログのRSS
 https://github.com/pop-culture-studio/feed2json でrssからjsonに変換しているのでこっちではjsonを読み込んで表示しているだけ。
