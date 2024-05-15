@@ -4,14 +4,14 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import 'dayjs/locale/ja';
 
+dayjs.extend(relativeTime);
+dayjs.extend(localizedFormat);
+dayjs.locale('ja');
+
 defineProps<{
   date: string,
   time: string,
 }>();
-
-dayjs.extend(relativeTime);
-dayjs.extend(localizedFormat);
-dayjs.locale('ja');
 </script>
 
 <template>
