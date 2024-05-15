@@ -1,17 +1,17 @@
-<script setup>
-const props = defineProps({
-  date: String,
-  time: String,
-})
+<script setup lang="ts">
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
+import localizedFormat from 'dayjs/plugin/localizedFormat';
+import 'dayjs/locale/ja';
 
-import dayjs from 'dayjs'
-import relativeTime from 'dayjs/plugin/relativeTime'
-import localizedFormat from 'dayjs/plugin/localizedFormat'
-import 'dayjs/locale/ja'
+defineProps<{
+  date: string,
+  time: string,
+}>();
 
-dayjs.extend(relativeTime)
-dayjs.extend(localizedFormat)
-dayjs.locale('ja')
+dayjs.extend(relativeTime);
+dayjs.extend(localizedFormat);
+dayjs.locale('ja');
 </script>
 
 <template>

@@ -1,14 +1,14 @@
-<script setup>
-const url = import.meta.env.VITE_NOTE_URL
+<script setup lang="ts">
+import NoteItem from './NoteItem.vue';
+import {ref} from 'vue';
+import {Item} from '../../types';
 
-import NoteItem from './NoteItem.vue'
-import { ref } from 'vue'
+const url: string = import.meta.env.VITE_NOTE_URL;
+const items = ref<Item[]>([]);
 
-const items = ref([])
-
-fetch(url).then(res => res.json()).then(json => items.value = json)
+fetch(url).then(res => res.json()).then(json => items.value = json);
 </script>
 
 <template>
-  <NoteItem v-for="item in items" :key="item.link" v-bind="item" />
+  <NoteItem v-for="item in items" :key="item.link" v-bind="item"/>
 </template>

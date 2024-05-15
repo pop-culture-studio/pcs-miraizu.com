@@ -1,14 +1,8 @@
-<script setup>
+<script setup lang="ts">
 import NoteTime from './NoteTime.vue'
+import {Item} from '../../types';
 
-const props = defineProps({
-  link: String,
-  date: String,
-  time: String,
-  title: String,
-  thumbnail: String,
-  description: String,
-})
+defineProps<Item>();
 </script>
 
 <template>
@@ -20,7 +14,7 @@ const props = defineProps({
     </div>
 
     <div class="p-3 sm:py-1">
-      <NoteTime :date="date" :time="time" class="text-gray-500" />
+      <NoteTime :date="date" :time="time" class="text-gray-500"/>
 
       <h3 class="my-2 text-2xl">
         <a :href="link" class="text-blue font-bold hover:underline" target="_blank">
