@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import NoteTime from './NoteTime.vue'
-import {Item} from '../types';
+import type {Item} from '../types';
 
 defineProps<Item>();
 </script>
