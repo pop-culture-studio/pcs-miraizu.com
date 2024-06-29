@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import NoteItem from './NoteItem.vue';
 import {ref} from 'vue';
-import {Item} from '../types';
+import type {Item} from '../types';
 
 const url: string = import.meta.env.VITE_NOTE_URL;
 const items = ref<Item[]>([]);
