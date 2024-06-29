@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import NoteItem from './NoteItem.vue';
-import {ref} from 'vue';
+import {ref, onMounted} from 'vue';
 import type {Item} from '../types';
 
 const url: string = import.meta.env.VITE_NOTE_URL;
 const items = ref<Item[]>([]);
 
-fetch(url).then(res => res.json()).then(json => items.value = json);
+onMounted(async () => {
+  const res = await fetch(url);
+  items.value = await res.json();
+})
 </script>
 
 <template>
